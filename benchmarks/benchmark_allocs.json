@@ -1,0 +1,730 @@
+[
+  {
+    "scenario": "Account_ModelToPB",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 192,
+    "native_bytes": 192,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Account_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 96,
+    "native_bytes": 96,
+    "winner": "Native"
+  },
+  {
+    "scenario": "AutoEnumConverter_Convert_Internal",
+    "pbmo_allocs": 0,
+    "native_allocs": 0,
+    "pbmo_bytes": 0,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Comprehensive_ModelToPB",
+    "pbmo_allocs": 8,
+    "native_allocs": 11,
+    "pbmo_bytes": 408,
+    "native_bytes": 752,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "Comprehensive_PBToModel",
+    "pbmo_allocs": 5,
+    "native_allocs": 4,
+    "pbmo_bytes": 264,
+    "native_bytes": 240,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Config_ModelToPB",
+    "pbmo_allocs": 1,
+    "native_allocs": 6,
+    "pbmo_bytes": 24,
+    "native_bytes": 408,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "Config_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 64,
+    "native_bytes": 64,
+    "winner": "Native"
+  },
+  {
+    "scenario": "DeepNested4_Batch100_PBToModel",
+    "pbmo_allocs": 302,
+    "native_allocs": 401,
+    "pbmo_bytes": 23424,
+    "native_bytes": 23296,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "DeepNested4_ModelToPB",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 272,
+    "native_bytes": 272,
+    "winner": "Native"
+  },
+  {
+    "scenario": "DeepNested4_ModelToPB_Parallel",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 272,
+    "native_bytes": 272,
+    "winner": "Native"
+  },
+  {
+    "scenario": "DeepNested4_PBToModel",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 224,
+    "native_bytes": 224,
+    "winner": "Native"
+  },
+  {
+    "scenario": "DeepNested4_PBToModel_Parallel",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 224,
+    "native_bytes": 224,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Enterprise_ModelToPB",
+    "pbmo_allocs": 6,
+    "native_allocs": 6,
+    "pbmo_bytes": 464,
+    "native_bytes": 464,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Enterprise_PBToModel",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 368,
+    "native_bytes": 368,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Enterprise_PBToModel_Parallel",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 368,
+    "native_bytes": 368,
+    "winner": "Native"
+  },
+  {
+    "scenario": "EnumMapper_Map_Internal",
+    "pbmo_allocs": 0,
+    "native_allocs": 0,
+    "pbmo_bytes": 0,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Full_ModelToPB",
+    "pbmo_allocs": 6,
+    "native_allocs": 6,
+    "pbmo_bytes": 416,
+    "native_bytes": 416,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Full_PBToModel",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 184,
+    "native_bytes": 184,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Full_PBToModel_Parallel",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 184,
+    "native_bytes": 184,
+    "winner": "Native"
+  },
+  {
+    "scenario": "GenericEnumMapper_Map_Internal",
+    "pbmo_allocs": 0,
+    "native_allocs": 0,
+    "pbmo_bytes": 0,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Huge100_ModelToPB",
+    "pbmo_allocs": 8,
+    "native_allocs": 10,
+    "pbmo_bytes": 1408,
+    "native_bytes": 1536,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "Huge100_PBToModel",
+    "pbmo_allocs": 7,
+    "native_allocs": 7,
+    "pbmo_bytes": 1328,
+    "native_bytes": 1328,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Huge30_ModelToPB",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 544,
+    "native_bytes": 544,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Huge30_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 448,
+    "native_bytes": 448,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Huge50_ModelToPB",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 992,
+    "native_bytes": 992,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Huge50_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 770,
+    "native_bytes": 770,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Large_Batch100_PBToModel",
+    "pbmo_allocs": 202,
+    "native_allocs": 301,
+    "pbmo_bytes": 28960,
+    "native_bytes": 30496,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "Large_ModelToPB",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 448,
+    "native_bytes": 448,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Large_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 296,
+    "native_bytes": 296,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Large_PBToModel_Parallel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 296,
+    "native_bytes": 296,
+    "winner": "Native"
+  },
+  {
+    "scenario": "List_ModelToPB",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 200,
+    "native_bytes": 144,
+    "winner": "Native"
+  },
+  {
+    "scenario": "List_PBToModel",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 200,
+    "native_bytes": 144,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Mapped_ModelToPB",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Mapped_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Mapped_WithFieldMapping_ModelToPB_Internal",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Mapped_WithFieldMapping_PBToModel_Internal",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Medium_ModelToPB",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 96,
+    "native_bytes": 96,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Medium_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 96,
+    "native_bytes": 96,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Medium_PBToModel_Parallel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 96,
+    "native_bytes": 96,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Member_ModelToPB",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 320,
+    "native_bytes": 320,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Member_PBToModel",
+    "pbmo_allocs": 2,
+    "native_allocs": 2,
+    "pbmo_bytes": 184,
+    "native_bytes": 184,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Metadata_ModelToPB",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 24,
+    "native_bytes": 24,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Metadata_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 24,
+    "native_bytes": 24,
+    "winner": "Native"
+  },
+  {
+    "scenario": "NamedSlice_ModelToPB",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 64,
+    "native_bytes": 64,
+    "winner": "Native"
+  },
+  {
+    "scenario": "NamedSlice_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 64,
+    "native_bytes": 64,
+    "winner": "Native"
+  },
+  {
+    "scenario": "NewBidiConverter_Internal",
+    "pbmo_allocs": 7,
+    "native_allocs": 0,
+    "pbmo_bytes": 448,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "NewBidiConverter_WithOptions_Internal",
+    "pbmo_allocs": 8,
+    "native_allocs": 2,
+    "pbmo_bytes": 736,
+    "native_bytes": 336,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Organization_ModelToPB",
+    "pbmo_allocs": 6,
+    "native_allocs": 6,
+    "pbmo_bytes": 512,
+    "native_bytes": 512,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Organization_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 304,
+    "native_bytes": 304,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Outer_ModelToPB",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 72,
+    "native_bytes": 72,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Outer_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 72,
+    "native_bytes": 72,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Outer_PBToModel_Parallel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 72,
+    "native_bytes": 72,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Product_ModelToPB",
+    "pbmo_allocs": 10,
+    "native_allocs": 9,
+    "pbmo_bytes": 584,
+    "native_bytes": 560,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Product_PBToModel",
+    "pbmo_allocs": 4,
+    "native_allocs": 3,
+    "pbmo_bytes": 329,
+    "native_bytes": 305,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Registry_Lookup_Internal",
+    "pbmo_allocs": 3,
+    "native_allocs": 0,
+    "pbmo_bytes": 56,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Registry_Register_Internal",
+    "pbmo_allocs": 8,
+    "native_allocs": 0,
+    "pbmo_bytes": 176,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "SafeBatchConvert100_PBToModel_Internal",
+    "pbmo_allocs": 4,
+    "native_allocs": 101,
+    "pbmo_bytes": 10672,
+    "native_bytes": 5696,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "SafeConverter_SafeConvertPBToModel_Internal",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "ScoreBoard_ModelToPB",
+    "pbmo_allocs": 6,
+    "native_allocs": 5,
+    "pbmo_bytes": 168,
+    "native_bytes": 144,
+    "winner": "Native"
+  },
+  {
+    "scenario": "ScoreBoard_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 2,
+    "pbmo_bytes": 152,
+    "native_bytes": 128,
+    "winner": "Native"
+  },
+  {
+    "scenario": "ServiceConfig_ModelToPB",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 272,
+    "native_bytes": 272,
+    "winner": "Native"
+  },
+  {
+    "scenario": "ServiceConfig_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 136,
+    "native_bytes": 136,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_Batch1000_PBToModel",
+    "pbmo_allocs": 2,
+    "native_allocs": 1001,
+    "pbmo_bytes": 57344,
+    "native_bytes": 56192,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "Simple_Batch100_PBToModel",
+    "pbmo_allocs": 2,
+    "native_allocs": 101,
+    "pbmo_bytes": 5760,
+    "native_bytes": 5696,
+    "winner": "PBMO"
+  },
+  {
+    "scenario": "Simple_BatchConvert100_ModelToPB_Internal",
+    "pbmo_allocs": 4,
+    "native_allocs": 1,
+    "pbmo_bytes": 4936,
+    "native_bytes": 4864,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_BatchConvert100_PBToModel_Internal",
+    "pbmo_allocs": 4,
+    "native_allocs": 1,
+    "pbmo_bytes": 4936,
+    "native_bytes": 4864,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_ModelToPB",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_PBToModel_Parallel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_PBToModel_Parallel_Internal",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Simple_WithTransformer_PBToModel_Internal",
+    "pbmo_allocs": 4,
+    "native_allocs": 3,
+    "pbmo_bytes": 96,
+    "native_bytes": 80,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Store_ModelToPB",
+    "pbmo_allocs": 4,
+    "native_allocs": 4,
+    "pbmo_bytes": 368,
+    "native_bytes": 368,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Store_PBToModel",
+    "pbmo_allocs": 2,
+    "native_allocs": 2,
+    "pbmo_bytes": 288,
+    "native_bytes": 288,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TimePtr_ModelToPB",
+    "pbmo_allocs": 2,
+    "native_allocs": 2,
+    "pbmo_bytes": 96,
+    "native_bytes": 96,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TimePtr_PBToModel",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 80,
+    "native_bytes": 80,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TimeZeroValidValue_ModelToPB_Internal",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 160,
+    "native_bytes": 160,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TimeZeroZeroValue_ModelToPB_Internal",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 32,
+    "native_bytes": 32,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TimeZero_ModelToPB",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 160,
+    "native_bytes": 160,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TimeZero_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 64,
+    "native_bytes": 64,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TransformerRegistry_Apply_Internal",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 48,
+    "native_bytes": 48,
+    "winner": "Native"
+  },
+  {
+    "scenario": "TransformerRegistry_Count_Internal",
+    "pbmo_allocs": 0,
+    "native_allocs": 0,
+    "pbmo_bytes": 0,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "UserProfile_ModelToPB",
+    "pbmo_allocs": 3,
+    "native_allocs": 3,
+    "pbmo_bytes": 448,
+    "native_bytes": 448,
+    "winner": "Native"
+  },
+  {
+    "scenario": "UserProfile_PBToModel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 384,
+    "native_bytes": 384,
+    "winner": "Native"
+  },
+  {
+    "scenario": "UserProfile_PBToModel_Parallel",
+    "pbmo_allocs": 1,
+    "native_allocs": 1,
+    "pbmo_bytes": 384,
+    "native_bytes": 384,
+    "winner": "Native"
+  },
+  {
+    "scenario": "UserWithAddress_ModelToPB",
+    "pbmo_allocs": 2,
+    "native_allocs": 2,
+    "pbmo_bytes": 128,
+    "native_bytes": 128,
+    "winner": "Native"
+  },
+  {
+    "scenario": "UserWithAddress_PBToModel",
+    "pbmo_allocs": 2,
+    "native_allocs": 2,
+    "pbmo_bytes": 128,
+    "native_bytes": 128,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Validator_Validate_Internal",
+    "pbmo_allocs": 3,
+    "native_allocs": 0,
+    "pbmo_bytes": 40,
+    "native_bytes": 0,
+    "winner": "Native"
+  },
+  {
+    "scenario": "WrapperField_AllTypes_ModelToPB_Internal",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 256,
+    "native_bytes": 256,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Wrapper_ModelToPB",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 256,
+    "native_bytes": 256,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Wrapper_PBToModel",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 80,
+    "native_bytes": 80,
+    "winner": "Native"
+  },
+  {
+    "scenario": "Wrapper_PBToModel_Parallel",
+    "pbmo_allocs": 5,
+    "native_allocs": 5,
+    "pbmo_bytes": 80,
+    "native_bytes": 80,
+    "winner": "Native"
+  }
+]
