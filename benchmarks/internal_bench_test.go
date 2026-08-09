@@ -70,7 +70,6 @@ func BenchmarkPBMO_NewBidiConverter_WithOptions_Internal(b *testing.B) {
 		pbmo.NewBidiConverter(
 			models.SimplePB{}, models.SimpleModel{},
 			pbmo.WithAutoTimeConversion(true),
-			pbmo.WithValidation(false),
 			pbmo.WithFieldMapping("ID", "Id"),
 		)
 	}
@@ -273,34 +272,30 @@ func BenchmarkPBMO_Simple_WithTransformer_PBToModel_Internal(b *testing.B) {
 // ══════════════════════════════════════════════════════════════════════════════
 
 func BenchmarkPBMO_Simple_BatchConvert100_PBToModel_Internal(b *testing.B) {
-	converter := pbmo.NewBidiConverter(models.SimplePB{}, models.SimpleModel{})
-	pbs := make([]models.SimplePB, 100)
+	pbs := make([]*models.SimplePB, 100)
 	for i := range pbs {
-		pbs[i] = models.SimplePB{Id: uint64(i), Name: "user", Email: "u@t.com", Age: int32(20 + i%50)}
+		pbs[i] = &models.SimplePB{Id: uint64(i), Name: "user", Email: "u@t.com", Age: int32(20 + i%50)}
 	}
 
 	b.ResetTimer()
 	b.ReportAllocs()
 	for i := 0; i < b.N; i++ {
-		var ms []models.SimpleModel
-		if err := converter.BatchConvertPBToModel(pbs, &ms); err != nil {
+		if _, err := pbmo.FromPBs[models.SimplePB, models.SimpleModel](pbs); err != nil {
 			b.Fatal(err)
 		}
 	}
 }
 
 func BenchmarkPBMO_Simple_BatchConvert100_ModelToPB_Internal(b *testing.B) {
-	converter := pbmo.NewBidiConverter(models.SimplePB{}, models.SimpleModel{})
-	ms := make([]models.SimpleModel, 100)
+	ms := make([]*models.SimpleModel, 100)
 	for i := range ms {
-		ms[i] = models.SimpleModel{ID: uint64(i), Name: "user", Email: "u@t.com", Age: 20 + i%50}
+		ms[i] = &models.SimpleModel{ID: uint64(i), Name: "user", Email: "u@t.com", Age: 20 + i%50}
 	}
 
 	b.ResetTimer()
 	b.ReportAllocs()
 	for i := 0; i < b.N; i++ {
-		var pbs []models.SimplePB
-		if err := converter.BatchConvertModelToPB(ms, &pbs); err != nil {
+		if _, err := pbmo.ToPBs[models.SimpleModel, models.SimplePB](ms); err != nil {
 			b.Fatal(err)
 		}
 	}
@@ -320,6 +315,50 @@ func BenchmarkPBMO_SafeBatchConvert100_PBToModel_Internal(b *testing.B) {
 	b.ReportAllocs()
 	for i := 0; i < b.N; i++ {
 		_, _ = pbmo.SafeFromPBs[models.SimplePB, models.SimpleModel](pbs)
+	}
+}
+
+func BenchmarkPBMO_SafeBatchConvert100_ModelToPB_Internal(b *testing.B) {
+	ms := make([]models.SimpleModel, 100)
+	for i := range ms {
+		ms[i] = models.SimpleModel{ID: uint64(i), Name: "user", Email: "u@t.com", Age: 20 + i%50}
+	}
+
+	b.ResetTimer()
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		_, _ = pbmo.SafeToPBs[models.SimpleModel, models.SimplePB](ms)
+	}
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// 错误构造与分类基准（自带 Error 值类型与 ErrorType 分类）
+// ══════════════════════════════════════════════════════════════════════════════
+
+// BenchmarkPBMO_NewError_Internal 带格式化参数构造分类错误
+func BenchmarkPBMO_NewError_Internal(b *testing.B) {
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		_ = pbmo.NewValidationError("field %s: %v", "Name", "required")
+	}
+}
+
+// BenchmarkPBMO_NewError_NoArgs_Internal 无格式化参数，走纯拼接分支
+func BenchmarkPBMO_NewError_NoArgs_Internal(b *testing.B) {
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		_ = pbmo.NewValidationError("invalid model")
+	}
+}
+
+// BenchmarkPBMO_ClassifyError_Internal 从错误实例取回分类
+func BenchmarkPBMO_ClassifyError_Internal(b *testing.B) {
+	err := pbmo.NewValidationError("invalid model")
+
+	b.ResetTimer()
+	b.ReportAllocs()
+	for i := 0; i < b.N; i++ {
+		_ = pbmo.ClassifyError(err)
 	}
 }
 
