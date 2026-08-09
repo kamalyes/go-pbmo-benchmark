@@ -11,3 +11,7 @@ cpu.out
 # Benchmark output (temp files)
 benchmark_output.txt
 benchmark_full.txt
+
+# CI 本地克隆的被测模块（benchmark.yml 把 go-pbmo checkout 到 _go-pbmo/）
+# [EN] CI-local clone of the module under test
+_go-pbmo/
