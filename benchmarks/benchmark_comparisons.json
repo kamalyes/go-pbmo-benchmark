@@ -1,639 +1,632 @@
 [
   {
     "scenario": "Account_ModelToPB",
-    "pbmo_ns": 139.4,
-    "native_ns": 107.40000000000002,
-    "ratio": 1.297951582867784,
+    "pbmo_ns": 152.93333333333334,
+    "native_ns": 112.76666666666665,
+    "ratio": 1.3561927283476207,
     "winner": "Native"
   },
   {
     "scenario": "Account_PBToModel",
-    "pbmo_ns": 78.88666666666667,
-    "native_ns": 51.803333333333335,
-    "ratio": 1.5228106299465929,
+    "pbmo_ns": 85.95666666666666,
+    "native_ns": 54.22333333333333,
+    "ratio": 1.5852339091412062,
     "winner": "Native"
   },
   {
     "scenario": "AutoEnumConverter_Convert_Internal",
-    "pbmo_ns": 7.542333333333333,
-    "native_ns": 7.609333333333333,
-    "ratio": 0.9911950236551603,
+    "pbmo_ns": 8.738,
+    "native_ns": 9.341666666666667,
+    "ratio": 0.935379125780553,
     "winner": "PBMO"
   },
   {
     "scenario": "Comprehensive_ModelToPB",
-    "pbmo_ns": 412.73333333333335,
-    "native_ns": 498.3,
-    "ratio": 0.8282828282828283,
+    "pbmo_ns": 429.26666666666665,
+    "native_ns": 499.40000000000003,
+    "ratio": 0.8595648111066613,
     "winner": "PBMO"
   },
   {
     "scenario": "Comprehensive_PBToModel",
-    "pbmo_ns": 295.23333333333335,
-    "native_ns": 148.46666666666667,
-    "ratio": 1.9885496183206108,
+    "pbmo_ns": 279.1333333333333,
+    "native_ns": 147.9333333333333,
+    "ratio": 1.886885984677783,
     "winner": "Native"
   },
   {
     "scenario": "Config_ModelToPB",
-    "pbmo_ns": 74.03666666666668,
-    "native_ns": 287.2333333333333,
-    "ratio": 0.25775792038992695,
+    "pbmo_ns": 82.27666666666666,
+    "native_ns": 293.8,
+    "ratio": 0.28004311322895387,
     "winner": "PBMO"
   },
   {
     "scenario": "Config_PBToModel",
-    "pbmo_ns": 83.45333333333333,
-    "native_ns": 62.169999999999995,
-    "ratio": 1.3423408932496919,
+    "pbmo_ns": 90.52333333333333,
+    "native_ns": 65.23666666666666,
+    "ratio": 1.3876143273210362,
     "winner": "Native"
   },
   {
     "scenario": "DeepNested4_Batch100_PBToModel",
-    "pbmo_ns": 19833.666666666668,
-    "native_ns": 14181,
-    "ratio": 1.3986084667277814,
+    "pbmo_ns": 21724.666666666668,
+    "native_ns": 14708.333333333334,
+    "ratio": 1.4770311614730878,
     "winner": "Native"
   },
   {
     "scenario": "DeepNested4_ModelToPB",
-    "pbmo_ns": 254.36666666666665,
-    "native_ns": 162.13333333333333,
-    "ratio": 1.5688733552631577,
+    "pbmo_ns": 286.3333333333333,
+    "native_ns": 170.96666666666667,
+    "ratio": 1.6747904074868394,
     "winner": "Native"
   },
   {
     "scenario": "DeepNested4_ModelToPB_Parallel",
-    "pbmo_ns": 182.73333333333335,
-    "native_ns": 137.73333333333332,
-    "ratio": 1.326718296224589,
+    "pbmo_ns": 178.83333333333334,
+    "native_ns": 135.46666666666667,
+    "ratio": 1.3201279527559056,
     "winner": "Native"
   },
   {
     "scenario": "DeepNested4_PBToModel",
-    "pbmo_ns": 224.76666666666665,
-    "native_ns": 139.5666666666667,
-    "ratio": 1.6104609505612606,
+    "pbmo_ns": 253.26666666666665,
+    "native_ns": 143.23333333333332,
+    "ratio": 1.7682103793344195,
     "winner": "Native"
   },
   {
     "scenario": "DeepNested4_PBToModel_Parallel",
-    "pbmo_ns": 158.23333333333332,
-    "native_ns": 115.39999999999999,
-    "ratio": 1.3711727325245522,
+    "pbmo_ns": 155.5,
+    "native_ns": 112.39999999999999,
+    "ratio": 1.3834519572953738,
     "winner": "Native"
   },
   {
     "scenario": "Enterprise_ModelToPB",
-    "pbmo_ns": 351.76666666666665,
-    "native_ns": 250.83333333333334,
-    "ratio": 1.402392026578073,
+    "pbmo_ns": 385.93333333333334,
+    "native_ns": 261.8666666666667,
+    "ratio": 1.4737780040733197,
     "winner": "Native"
   },
   {
     "scenario": "Enterprise_PBToModel",
-    "pbmo_ns": 295.09999999999997,
-    "native_ns": 194.5333333333333,
-    "ratio": 1.5169636737491432,
+    "pbmo_ns": 328.1333333333334,
+    "native_ns": 206,
+    "ratio": 1.5928802588996767,
     "winner": "Native"
   },
   {
     "scenario": "Enterprise_PBToModel_Parallel",
-    "pbmo_ns": 237.16666666666666,
-    "native_ns": 192.80000000000004,
-    "ratio": 1.2301175656984782,
+    "pbmo_ns": 234.13333333333333,
+    "native_ns": 185.1,
+    "ratio": 1.2649018548532325,
     "winner": "Native"
   },
   {
     "scenario": "EnumMapper_Map_Internal",
-    "pbmo_ns": 7.280000000000001,
-    "native_ns": 7.470666666666666,
-    "ratio": 0.9744779582366592,
+    "pbmo_ns": 8.866666666666667,
+    "native_ns": 9.282,
+    "ratio": 0.9552538964303671,
     "winner": "PBMO"
   },
   {
     "scenario": "Full_ModelToPB",
-    "pbmo_ns": 278.59999999999997,
-    "native_ns": 224.86666666666665,
-    "ratio": 1.2389564186184405,
+    "pbmo_ns": 286.8333333333333,
+    "native_ns": 232.26666666666665,
+    "ratio": 1.234931113662457,
     "winner": "Native"
   },
   {
     "scenario": "Full_PBToModel",
-    "pbmo_ns": 168.16666666666666,
-    "native_ns": 118.16666666666667,
-    "ratio": 1.4231311706629053,
+    "pbmo_ns": 175.96666666666667,
+    "native_ns": 116.96666666666665,
+    "ratio": 1.5044172128811628,
     "winner": "Native"
   },
   {
     "scenario": "Full_PBToModel_Parallel",
-    "pbmo_ns": 122.63333333333333,
-    "native_ns": 100.3,
-    "ratio": 1.2226653373213692,
+    "pbmo_ns": 119.5,
+    "native_ns": 97.11333333333334,
+    "ratio": 1.2305210407084504,
     "winner": "Native"
   },
   {
     "scenario": "GenericEnumMapper_Map_Internal",
-    "pbmo_ns": 7.391000000000001,
-    "native_ns": 7.517,
-    "ratio": 0.9832379938805376,
+    "pbmo_ns": 8.911333333333333,
+    "native_ns": 9.265666666666666,
+    "ratio": 0.9617584631435048,
     "winner": "PBMO"
   },
   {
     "scenario": "Huge100_ModelToPB",
-    "pbmo_ns": 858.3333333333334,
-    "native_ns": 617.9666666666666,
-    "ratio": 1.3889638060305305,
+    "pbmo_ns": 914.4666666666667,
+    "native_ns": 623.9,
+    "ratio": 1.4657263450339264,
     "winner": "Native"
   },
   {
     "scenario": "Huge100_PBToModel",
-    "pbmo_ns": 764.9666666666667,
-    "native_ns": 511.8999999999999,
-    "ratio": 1.4943673894640883,
+    "pbmo_ns": 842.9333333333334,
+    "native_ns": 497.3333333333333,
+    "ratio": 1.6949061662198392,
     "winner": "Native"
   },
   {
     "scenario": "Huge30_ModelToPB",
-    "pbmo_ns": 295.76666666666665,
-    "native_ns": 215.66666666666666,
-    "ratio": 1.3714064914992272,
+    "pbmo_ns": 314.7,
+    "native_ns": 207.30000000000004,
+    "ratio": 1.5180897250361791,
     "winner": "Native"
   },
   {
     "scenario": "Huge30_PBToModel",
-    "pbmo_ns": 228.76666666666665,
-    "native_ns": 150.86666666666667,
-    "ratio": 1.516349977905435,
+    "pbmo_ns": 245.5666666666667,
+    "native_ns": 147.86666666666667,
+    "ratio": 1.6607303877367,
     "winner": "Native"
   },
   {
     "scenario": "Huge50_ModelToPB",
-    "pbmo_ns": 510.8,
-    "native_ns": 375.8,
-    "ratio": 1.3592336349121874,
+    "pbmo_ns": 558.9,
+    "native_ns": 385.53333333333336,
+    "ratio": 1.4496800968355523,
     "winner": "Native"
   },
   {
     "scenario": "Huge50_PBToModel",
-    "pbmo_ns": 410.06666666666666,
-    "native_ns": 261.6666666666667,
-    "ratio": 1.5671337579617832,
+    "pbmo_ns": 444.8666666666666,
+    "native_ns": 263.43333333333334,
+    "ratio": 1.688725800328989,
     "winner": "Native"
   },
   {
     "scenario": "Large_Batch100_PBToModel",
-    "pbmo_ns": 13944.333333333334,
-    "native_ns": 13478.333333333334,
-    "ratio": 1.0345740076666254,
+    "pbmo_ns": 15628.333333333334,
+    "native_ns": 12789.333333333334,
+    "ratio": 1.221981859883236,
     "winner": "Native"
   },
   {
     "scenario": "Large_ModelToPB",
-    "pbmo_ns": 274.43333333333334,
-    "native_ns": 205.36666666666667,
-    "ratio": 1.3363090407401395,
+    "pbmo_ns": 291.06666666666666,
+    "native_ns": 209.73333333333335,
+    "ratio": 1.3877940241576605,
     "winner": "Native"
   },
   {
     "scenario": "Large_PBToModel",
-    "pbmo_ns": 199.53333333333333,
-    "native_ns": 118.66666666666667,
-    "ratio": 1.6814606741573033,
+    "pbmo_ns": 201.76666666666665,
+    "native_ns": 118.33333333333333,
+    "ratio": 1.7050704225352111,
     "winner": "Native"
   },
   {
     "scenario": "Large_PBToModel_Parallel",
-    "pbmo_ns": 136.63333333333333,
-    "native_ns": 115.13333333333333,
-    "ratio": 1.186740011580776,
+    "pbmo_ns": 138.5666666666667,
+    "native_ns": 115.5,
+    "ratio": 1.1997113997114,
     "winner": "Native"
   },
   {
     "scenario": "List_ModelToPB",
-    "pbmo_ns": 210.23333333333335,
-    "native_ns": 134.5,
-    "ratio": 1.5630731102850064,
+    "pbmo_ns": 248.36666666666667,
+    "native_ns": 147.06666666666666,
+    "ratio": 1.6888032638259294,
     "winner": "Native"
   },
   {
     "scenario": "List_PBToModel",
-    "pbmo_ns": 212.79999999999998,
-    "native_ns": 133.33333333333334,
-    "ratio": 1.5959999999999999,
+    "pbmo_ns": 243.66666666666666,
+    "native_ns": 146.36666666666667,
+    "ratio": 1.6647688453655203,
     "winner": "Native"
   },
   {
     "scenario": "Mapped_ModelToPB",
-    "pbmo_ns": 52.60666666666666,
-    "native_ns": 32.18,
-    "ratio": 1.6347627926248185,
+    "pbmo_ns": 63.22,
+    "native_ns": 34.85,
+    "ratio": 1.8140602582496412,
     "winner": "Native"
   },
   {
     "scenario": "Mapped_PBToModel",
-    "pbmo_ns": 52.84,
-    "native_ns": 32.17333333333333,
-    "ratio": 1.6423539162867802,
+    "pbmo_ns": 65.55,
+    "native_ns": 33.916666666666664,
+    "ratio": 1.9326781326781328,
     "winner": "Native"
   },
   {
     "scenario": "Mapped_WithFieldMapping_ModelToPB_Internal",
-    "pbmo_ns": 53.67333333333334,
-    "native_ns": 32.156666666666666,
-    "ratio": 1.6691199336581322,
+    "pbmo_ns": 59.47,
+    "native_ns": 33.45666666666667,
+    "ratio": 1.777523164292119,
     "winner": "Native"
   },
   {
     "scenario": "Mapped_WithFieldMapping_PBToModel_Internal",
-    "pbmo_ns": 56.18333333333334,
-    "native_ns": 32.31333333333334,
-    "ratio": 1.7387043532081699,
+    "pbmo_ns": 60.49,
+    "native_ns": 33.32333333333333,
+    "ratio": 1.8152445733720117,
     "winner": "Native"
   },
   {
     "scenario": "Medium_ModelToPB",
-    "pbmo_ns": 75.2,
-    "native_ns": 46.153333333333336,
-    "ratio": 1.6293514372381914,
+    "pbmo_ns": 84.22,
+    "native_ns": 47.78333333333333,
+    "ratio": 1.7625392396232997,
     "winner": "Native"
   },
   {
     "scenario": "Medium_PBToModel",
-    "pbmo_ns": 73.65666666666667,
-    "native_ns": 46.79,
-    "ratio": 1.5741967656906746,
+    "pbmo_ns": 84.35000000000001,
+    "native_ns": 48.76,
+    "ratio": 1.7299015586546351,
     "winner": "Native"
   },
   {
     "scenario": "Medium_PBToModel_Parallel",
-    "pbmo_ns": 57.00333333333333,
-    "native_ns": 45.419999999999995,
-    "ratio": 1.2550271539703508,
+    "pbmo_ns": 54.05666666666667,
+    "native_ns": 44.28,
+    "ratio": 1.2207919301415238,
     "winner": "Native"
   },
   {
     "scenario": "Member_ModelToPB",
-    "pbmo_ns": 221.20000000000002,
-    "native_ns": 169.26666666666668,
-    "ratio": 1.3068137061835368,
+    "pbmo_ns": 227.4333333333333,
+    "native_ns": 170.23333333333335,
+    "ratio": 1.3360093988643036,
     "winner": "Native"
   },
   {
     "scenario": "Member_PBToModel",
-    "pbmo_ns": 135.79999999999998,
-    "native_ns": 91.17666666666666,
-    "ratio": 1.4894161517932218,
+    "pbmo_ns": 145.06666666666666,
+    "native_ns": 89.71,
+    "ratio": 1.6170623862074092,
     "winner": "Native"
   },
   {
     "scenario": "Metadata_ModelToPB",
-    "pbmo_ns": 47.076666666666675,
-    "native_ns": 26.77333333333333,
-    "ratio": 1.758341633466136,
+    "pbmo_ns": 56.38,
+    "native_ns": 28.273333333333337,
+    "ratio": 1.994105163876444,
     "winner": "Native"
   },
   {
     "scenario": "Metadata_PBToModel",
-    "pbmo_ns": 47.803333333333335,
-    "native_ns": 26.296666666666667,
-    "ratio": 1.8178476359487894,
+    "pbmo_ns": 56.74666666666667,
+    "native_ns": 27.856666666666666,
+    "ratio": 2.037094651190619,
     "winner": "Native"
   },
   {
     "scenario": "NamedSlice_ModelToPB",
-    "pbmo_ns": 60.03666666666667,
-    "native_ns": 38.6,
-    "ratio": 1.5553540587219343,
+    "pbmo_ns": 68.77,
+    "native_ns": 41.39666666666667,
+    "ratio": 1.661244866736452,
     "winner": "Native"
   },
   {
     "scenario": "NamedSlice_PBToModel",
-    "pbmo_ns": 61.23666666666667,
-    "native_ns": 38.99333333333334,
-    "ratio": 1.5704393913489485,
+    "pbmo_ns": 68.80666666666667,
+    "native_ns": 41.703333333333326,
+    "ratio": 1.6499080808888182,
     "winner": "Native"
   },
   {
     "scenario": "NewBidiConverter_Internal",
-    "pbmo_ns": 282.7,
-    "native_ns": 1.4446666666666665,
-    "ratio": 195.68527918781726,
+    "pbmo_ns": 213.6,
+    "native_ns": 2.1823333333333337,
+    "ratio": 97.87689017870778,
     "winner": "Native"
   },
   {
     "scenario": "NewBidiConverter_WithOptions_Internal",
-    "pbmo_ns": 403.1000000000001,
-    "native_ns": 148.16666666666666,
-    "ratio": 2.72058492688414,
+    "pbmo_ns": 335.83333333333337,
+    "native_ns": 141.53333333333333,
+    "ratio": 2.372821479039096,
     "winner": "Native"
   },
   {
     "scenario": "Organization_ModelToPB",
-    "pbmo_ns": 314.3666666666667,
-    "native_ns": 243.79999999999998,
-    "ratio": 1.289444900191414,
+    "pbmo_ns": 332,
+    "native_ns": 248.63333333333333,
+    "ratio": 1.3352996380211826,
     "winner": "Native"
   },
   {
     "scenario": "Organization_PBToModel",
-    "pbmo_ns": 193.53333333333333,
-    "native_ns": 130.4,
-    "ratio": 1.4841513292433537,
+    "pbmo_ns": 202.76666666666665,
+    "native_ns": 124.59999999999998,
+    "ratio": 1.6273408239700375,
     "winner": "Native"
   },
   {
     "scenario": "Outer_ModelToPB",
-    "pbmo_ns": 122.06666666666666,
-    "native_ns": 75.97333333333334,
-    "ratio": 1.6067041067041063,
+    "pbmo_ns": 136.16666666666666,
+    "native_ns": 82.77666666666669,
+    "ratio": 1.6449885233358832,
     "winner": "Native"
   },
   {
     "scenario": "Outer_PBToModel",
-    "pbmo_ns": 123.66666666666667,
-    "native_ns": 76.22666666666667,
-    "ratio": 1.6223543816687074,
+    "pbmo_ns": 135.96666666666667,
+    "native_ns": 81.89999999999999,
+    "ratio": 1.6601546601546604,
     "winner": "Native"
   },
   {
     "scenario": "Outer_PBToModel_Parallel",
-    "pbmo_ns": 85.85666666666667,
-    "native_ns": 60.17333333333334,
-    "ratio": 1.4268225127409704,
+    "pbmo_ns": 79.14,
+    "native_ns": 55.85333333333333,
+    "ratio": 1.4169252804965387,
     "winner": "Native"
   },
   {
     "scenario": "Product_ModelToPB",
-    "pbmo_ns": 474.90000000000003,
-    "native_ns": 332.26666666666665,
-    "ratio": 1.42927367576244,
+    "pbmo_ns": 504.4333333333334,
+    "native_ns": 344.7,
+    "ratio": 1.4633981239725367,
     "winner": "Native"
   },
   {
     "scenario": "Product_PBToModel",
-    "pbmo_ns": 267.1666666666667,
-    "native_ns": 155.76666666666665,
-    "ratio": 1.7151722662101436,
+    "pbmo_ns": 281.2333333333333,
+    "native_ns": 162.66666666666666,
+    "ratio": 1.7288934426229507,
     "winner": "Native"
   },
   {
     "scenario": "Registry_Lookup_Internal",
-    "pbmo_ns": 219.13333333333335,
-    "native_ns": 22.39,
-    "ratio": 9.787107339586125,
+    "pbmo_ns": 221.29999999999998,
+    "native_ns": 24.05333333333333,
+    "ratio": 9.20038802660754,
     "winner": "Native"
   },
   {
     "scenario": "Registry_Register_Internal",
-    "pbmo_ns": 555.2666666666667,
-    "native_ns": 60.16,
-    "ratio": 9.229831560283689,
+    "pbmo_ns": 542.3,
+    "native_ns": 66.23333333333333,
+    "ratio": 8.187720181177655,
     "winner": "Native"
   },
   {
     "scenario": "SafeBatchConvert100_PBToModel_Internal",
-    "pbmo_ns": 4062.6666666666665,
-    "native_ns": 3630.6666666666665,
-    "ratio": 1.118986412045538,
+    "pbmo_ns": 4277.666666666667,
+    "native_ns": 3704.6666666666665,
+    "ratio": 1.1546697858556776,
     "winner": "Native"
   },
   {
     "scenario": "SafeConverter_SafeConvertPBToModel_Internal",
-    "pbmo_ns": 59.76666666666666,
-    "native_ns": 32.620000000000005,
-    "ratio": 1.8322092785612094,
+    "pbmo_ns": 63.43666666666667,
+    "native_ns": 33.74333333333333,
+    "ratio": 1.8799762916131582,
     "winner": "Native"
   },
   {
     "scenario": "ScoreBoard_ModelToPB",
-    "pbmo_ns": 250.80000000000004,
-    "native_ns": 144.49999999999997,
-    "ratio": 1.735640138408305,
+    "pbmo_ns": 265.3,
+    "native_ns": 154.76666666666665,
+    "ratio": 1.714193409433556,
     "winner": "Native"
   },
   {
     "scenario": "ScoreBoard_PBToModel",
-    "pbmo_ns": 161.53333333333333,
-    "native_ns": 82.41666666666667,
-    "ratio": 1.9599595551061677,
+    "pbmo_ns": 173.6,
+    "native_ns": 86.48333333333333,
+    "ratio": 2.0073231836577374,
     "winner": "Native"
   },
   {
     "scenario": "ServiceConfig_ModelToPB",
-    "pbmo_ns": 198.5333333333333,
-    "native_ns": 151.70000000000002,
-    "ratio": 1.308723357503845,
+    "pbmo_ns": 207.9,
+    "native_ns": 157.2,
+    "ratio": 1.3225190839694658,
     "winner": "Native"
   },
   {
     "scenario": "ServiceConfig_PBToModel",
-    "pbmo_ns": 119.33333333333333,
-    "native_ns": 78.33,
-    "ratio": 1.5234690837907996,
+    "pbmo_ns": 130.9,
+    "native_ns": 78.52333333333334,
+    "ratio": 1.6670204185592392,
     "winner": "Native"
   },
   {
     "scenario": "Simple_Batch1000_PBToModel",
-    "pbmo_ns": 26085.333333333332,
-    "native_ns": 37524.333333333336,
-    "ratio": 0.695157808710792,
+    "pbmo_ns": 26501.333333333332,
+    "native_ns": 39233.666666666664,
+    "ratio": 0.6754742950357261,
     "winner": "PBMO"
   },
   {
     "scenario": "Simple_Batch100_PBToModel",
-    "pbmo_ns": 2587.6666666666665,
-    "native_ns": 3610.6666666666665,
-    "ratio": 0.7166728212703102,
+    "pbmo_ns": 2744,
+    "native_ns": 3794.6666666666665,
+    "ratio": 0.7231201686577653,
     "winner": "PBMO"
   },
   {
     "scenario": "Simple_BatchConvert100_ModelToPB_Internal",
-    "pbmo_ns": 2675.3333333333335,
-    "native_ns": 1856.6666666666667,
-    "ratio": 1.4409335727109516,
+    "pbmo_ns": 2816.3333333333335,
+    "native_ns": 1921.6666666666667,
+    "ratio": 1.465568083261058,
     "winner": "Native"
   },
   {
     "scenario": "Simple_BatchConvert100_PBToModel_Internal",
-    "pbmo_ns": 2682,
-    "native_ns": 1840.3333333333333,
-    "ratio": 1.45734468393407,
+    "pbmo_ns": 2823.3333333333335,
+    "native_ns": 1928.3333333333333,
+    "ratio": 1.4641313742437339,
     "winner": "Native"
   },
   {
     "scenario": "Simple_ModelToPB",
-    "pbmo_ns": 54.04999999999999,
-    "native_ns": 32.54666666666666,
-    "ratio": 1.6606923392052437,
+    "pbmo_ns": 62.916666666666664,
+    "native_ns": 34.67666666666667,
+    "ratio": 1.8143804671729307,
     "winner": "Native"
   },
   {
     "scenario": "Simple_PBToModel",
-    "pbmo_ns": 54.43666666666667,
-    "native_ns": 32.89666666666667,
-    "ratio": 1.654777586381599,
+    "pbmo_ns": 62.81,
+    "native_ns": 34.20333333333334,
+    "ratio": 1.8363707241009646,
     "winner": "Native"
   },
   {
     "scenario": "Simple_PBToModel_Parallel",
-    "pbmo_ns": 40.026666666666664,
-    "native_ns": 29.176666666666666,
-    "ratio": 1.371872500856849,
+    "pbmo_ns": 36.44333333333333,
+    "native_ns": 27.333333333333332,
+    "ratio": 1.3332926829268292,
     "winner": "Native"
   },
   {
     "scenario": "Simple_PBToModel_Parallel_Internal",
-    "pbmo_ns": 38.92333333333334,
-    "native_ns": 26.996666666666666,
-    "ratio": 1.4417829361649588,
+    "pbmo_ns": 35.48,
+    "native_ns": 26.126666666666665,
+    "ratio": 1.357999489665731,
     "winner": "Native"
   },
   {
     "scenario": "Simple_WithTransformer_PBToModel_Internal",
-    "pbmo_ns": 289.56666666666666,
-    "native_ns": 120.43333333333334,
-    "ratio": 2.4043730971491835,
+    "pbmo_ns": 299.3666666666667,
+    "native_ns": 128.76666666666665,
+    "ratio": 2.324877038571059,
     "winner": "Native"
   },
   {
     "scenario": "Store_ModelToPB",
-    "pbmo_ns": 248.6,
-    "native_ns": 179.13333333333333,
-    "ratio": 1.387793077781913,
+    "pbmo_ns": 281,
+    "native_ns": 190.70000000000002,
+    "ratio": 1.4735186156266387,
     "winner": "Native"
   },
   {
     "scenario": "Store_PBToModel",
-    "pbmo_ns": 202.26666666666665,
-    "native_ns": 129.96666666666667,
-    "ratio": 1.556296486278533,
+    "pbmo_ns": 229.20000000000002,
+    "native_ns": 136.6,
+    "ratio": 1.677891654465593,
     "winner": "Native"
   },
   {
     "scenario": "TimePtr_ModelToPB",
-    "pbmo_ns": 95.14333333333333,
-    "native_ns": 66.95333333333333,
-    "ratio": 1.42103953002091,
+    "pbmo_ns": 102.66666666666667,
+    "native_ns": 68.54,
+    "ratio": 1.4979087637389359,
     "winner": "Native"
   },
   {
     "scenario": "TimePtr_PBToModel",
-    "pbmo_ns": 112.10000000000001,
-    "native_ns": 86.82333333333332,
-    "ratio": 1.291127577072216,
+    "pbmo_ns": 121.76666666666667,
+    "native_ns": 90.40333333333332,
+    "ratio": 1.3469267357398327,
     "winner": "Native"
   },
   {
     "scenario": "TimeZeroValidValue_ModelToPB_Internal",
-    "pbmo_ns": 126.3,
-    "native_ns": 98.20333333333333,
-    "ratio": 1.2861070567869386,
+    "pbmo_ns": 137.23333333333332,
+    "native_ns": 99.83666666666666,
+    "ratio": 1.374578478181029,
     "winner": "Native"
   },
   {
     "scenario": "TimeZeroZeroValue_ModelToPB_Internal",
-    "pbmo_ns": 51.74666666666667,
-    "native_ns": 28.03333333333333,
-    "ratio": 1.8458977407847803,
+    "pbmo_ns": 61.75333333333333,
+    "native_ns": 29.266666666666666,
+    "ratio": 2.11002277904328,
     "winner": "Native"
   },
   {
     "scenario": "TimeZero_ModelToPB",
-    "pbmo_ns": 130.96666666666667,
-    "native_ns": 103.63333333333333,
-    "ratio": 1.2637504020585397,
+    "pbmo_ns": 145.99999999999997,
+    "native_ns": 107.33333333333333,
+    "ratio": 1.3602484472049687,
     "winner": "Native"
   },
   {
     "scenario": "TimeZero_PBToModel",
-    "pbmo_ns": 66.79333333333334,
-    "native_ns": 44.64000000000001,
-    "ratio": 1.4962664277180404,
+    "pbmo_ns": 71.85333333333334,
+    "native_ns": 44.26,
+    "ratio": 1.6234372646482906,
     "winner": "Native"
   },
   {
     "scenario": "TransformerRegistry_Apply_Internal",
-    "pbmo_ns": 142.13333333333335,
-    "native_ns": 119.26666666666665,
-    "ratio": 1.1917272219116828,
+    "pbmo_ns": 138.43333333333334,
+    "native_ns": 117.33333333333333,
+    "ratio": 1.1798295454545455,
     "winner": "Native"
   },
   {
     "scenario": "TransformerRegistry_Count_Internal",
-    "pbmo_ns": 0.5776333333333333,
-    "native_ns": 0.5776333333333333,
-    "ratio": 1,
+    "pbmo_ns": 0.31266666666666665,
+    "native_ns": 0.3123,
+    "ratio": 1.0011740847475716,
     "winner": "Native"
   },
   {
     "scenario": "UserProfile_ModelToPB",
-    "pbmo_ns": 251.9666666666667,
-    "native_ns": 179.5,
-    "ratio": 1.4037140204271126,
+    "pbmo_ns": 274.66666666666663,
+    "native_ns": 174.9,
+    "ratio": 1.5704211930627023,
     "winner": "Native"
   },
   {
     "scenario": "UserProfile_PBToModel",
-    "pbmo_ns": 201.69999999999996,
-    "native_ns": 128.63333333333333,
-    "ratio": 1.5680228038351902,
+    "pbmo_ns": 216.29999999999998,
+    "native_ns": 124.33333333333333,
+    "ratio": 1.7396782841823055,
     "winner": "Native"
   },
   {
     "scenario": "UserProfile_PBToModel_Parallel",
-    "pbmo_ns": 160.1,
-    "native_ns": 136.6,
-    "ratio": 1.17203513909224,
+    "pbmo_ns": 166.20000000000002,
+    "native_ns": 139.9333333333333,
+    "ratio": 1.1877084325869465,
     "winner": "Native"
   },
   {
     "scenario": "UserWithAddress_ModelToPB",
-    "pbmo_ns": 119.56666666666666,
-    "native_ns": 76.44666666666667,
-    "ratio": 1.5640533705415538,
+    "pbmo_ns": 130.66666666666666,
+    "native_ns": 78.95333333333333,
+    "ratio": 1.6549860677193278,
     "winner": "Native"
   },
   {
     "scenario": "UserWithAddress_PBToModel",
-    "pbmo_ns": 119.16666666666667,
-    "native_ns": 75.67333333333333,
-    "ratio": 1.574751123249053,
-    "winner": "Native"
-  },
-  {
-    "scenario": "Validator_Validate_Internal",
-    "pbmo_ns": 353.56666666666666,
-    "native_ns": 1.14,
-    "ratio": 310.1461988304094,
+    "pbmo_ns": 130.4,
+    "native_ns": 78.46666666666665,
+    "ratio": 1.661852166525064,
     "winner": "Native"
   },
   {
     "scenario": "WrapperField_AllTypes_ModelToPB_Internal",
-    "pbmo_ns": 190.5,
-    "native_ns": 166.20000000000002,
-    "ratio": 1.1462093862815883,
+    "pbmo_ns": 202.86666666666667,
+    "native_ns": 170.63333333333333,
+    "ratio": 1.1889040828286777,
     "winner": "Native"
   },
   {
     "scenario": "Wrapper_ModelToPB",
-    "pbmo_ns": 202.0666666666667,
-    "native_ns": 174.89999999999998,
-    "ratio": 1.1553268534400614,
+    "pbmo_ns": 213.23333333333335,
+    "native_ns": 179.5,
+    "ratio": 1.1879294336118849,
     "winner": "Native"
   },
   {
     "scenario": "Wrapper_PBToModel",
-    "pbmo_ns": 120.16666666666667,
-    "native_ns": 93.38666666666667,
-    "ratio": 1.286764705882353,
+    "pbmo_ns": 126.46666666666668,
+    "native_ns": 96.53666666666668,
+    "ratio": 1.310037636821933,
     "winner": "Native"
   },
   {
     "scenario": "Wrapper_PBToModel_Parallel",
-    "pbmo_ns": 86.21333333333335,
-    "native_ns": 71.80333333333333,
-    "ratio": 1.200687061881993,
+    "pbmo_ns": 78.96000000000001,
+    "native_ns": 66.56333333333333,
+    "ratio": 1.1862386699384047,
     "winner": "Native"
   }
 ]

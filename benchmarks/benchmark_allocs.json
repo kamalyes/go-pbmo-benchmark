@@ -361,17 +361,17 @@
   },
   {
     "scenario": "NewBidiConverter_Internal",
-    "pbmo_allocs": 7,
+    "pbmo_allocs": 5,
     "native_allocs": 0,
-    "pbmo_bytes": 448,
+    "pbmo_bytes": 352,
     "native_bytes": 0,
     "winner": "Native"
   },
   {
     "scenario": "NewBidiConverter_WithOptions_Internal",
-    "pbmo_allocs": 8,
+    "pbmo_allocs": 6,
     "native_allocs": 2,
-    "pbmo_bytes": 736,
+    "pbmo_bytes": 640,
     "native_bytes": 336,
     "winner": "Native"
   },
@@ -685,14 +685,6 @@
     "native_allocs": 2,
     "pbmo_bytes": 128,
     "native_bytes": 128,
-    "winner": "Native"
-  },
-  {
-    "scenario": "Validator_Validate_Internal",
-    "pbmo_allocs": 3,
-    "native_allocs": 0,
-    "pbmo_bytes": 40,
-    "native_bytes": 0,
     "winner": "Native"
   },
   {
