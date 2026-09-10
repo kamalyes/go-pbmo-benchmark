@@ -1,11 +1,11 @@
 [
   {
     "scenario": "Account_ModelToPB",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
-    "pbmo_bytes": 192,
+    "pbmo_bytes": 176,
     "native_bytes": 192,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Account_PBToModel",
@@ -25,15 +25,15 @@
   },
   {
     "scenario": "Comprehensive_ModelToPB",
-    "pbmo_allocs": 8,
+    "pbmo_allocs": 5,
     "native_allocs": 11,
-    "pbmo_bytes": 408,
+    "pbmo_bytes": 392,
     "native_bytes": 752,
     "winner": "PBMO"
   },
   {
     "scenario": "Comprehensive_PBToModel",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 4,
     "native_allocs": 4,
     "pbmo_bytes": 264,
     "native_bytes": 240,
@@ -65,19 +65,19 @@
   },
   {
     "scenario": "DeepNested4_ModelToPB",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 4,
     "native_allocs": 5,
     "pbmo_bytes": 272,
     "native_bytes": 272,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "DeepNested4_ModelToPB_Parallel",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 4,
     "native_allocs": 5,
     "pbmo_bytes": 272,
     "native_bytes": 272,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "DeepNested4_PBToModel",
@@ -97,27 +97,27 @@
   },
   {
     "scenario": "Enterprise_ModelToPB",
-    "pbmo_allocs": 6,
+    "pbmo_allocs": 3,
     "native_allocs": 6,
     "pbmo_bytes": 464,
     "native_bytes": 464,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Enterprise_PBToModel",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 3,
     "native_allocs": 4,
     "pbmo_bytes": 368,
     "native_bytes": 368,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Enterprise_PBToModel_Parallel",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 3,
     "native_allocs": 4,
     "pbmo_bytes": 368,
     "native_bytes": 368,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "EnumMapper_Map_Internal",
@@ -129,27 +129,27 @@
   },
   {
     "scenario": "Full_ModelToPB",
-    "pbmo_allocs": 6,
+    "pbmo_allocs": 2,
     "native_allocs": 6,
     "pbmo_bytes": 416,
     "native_bytes": 416,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Full_PBToModel",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 2,
     "native_allocs": 4,
     "pbmo_bytes": 184,
     "native_bytes": 184,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Full_PBToModel_Parallel",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 2,
     "native_allocs": 4,
     "pbmo_bytes": 184,
     "native_bytes": 184,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "GenericEnumMapper_Map_Internal",
@@ -161,27 +161,27 @@
   },
   {
     "scenario": "Huge100_ModelToPB",
-    "pbmo_allocs": 8,
+    "pbmo_allocs": 2,
     "native_allocs": 10,
-    "pbmo_bytes": 1408,
+    "pbmo_bytes": 1728,
     "native_bytes": 1536,
     "winner": "PBMO"
   },
   {
     "scenario": "Huge100_PBToModel",
-    "pbmo_allocs": 7,
+    "pbmo_allocs": 2,
     "native_allocs": 7,
-    "pbmo_bytes": 1328,
+    "pbmo_bytes": 1344,
     "native_bytes": 1328,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Huge30_ModelToPB",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
-    "pbmo_bytes": 544,
+    "pbmo_bytes": 528,
     "native_bytes": 544,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Huge30_PBToModel",
@@ -193,23 +193,23 @@
   },
   {
     "scenario": "Huge50_ModelToPB",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 2,
     "native_allocs": 5,
-    "pbmo_bytes": 992,
+    "pbmo_bytes": 976,
     "native_bytes": 992,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Huge50_PBToModel",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
     "pbmo_bytes": 770,
     "native_bytes": 770,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Large_Batch100_PBToModel",
-    "pbmo_allocs": 202,
+    "pbmo_allocs": 102,
     "native_allocs": 301,
     "pbmo_bytes": 28960,
     "native_bytes": 30496,
@@ -217,43 +217,43 @@
   },
   {
     "scenario": "Large_ModelToPB",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 2,
     "native_allocs": 5,
-    "pbmo_bytes": 448,
+    "pbmo_bytes": 432,
     "native_bytes": 448,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Large_PBToModel",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
     "pbmo_bytes": 296,
     "native_bytes": 296,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Large_PBToModel_Parallel",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
     "pbmo_bytes": 296,
     "native_bytes": 296,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "List_ModelToPB",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 4,
     "native_allocs": 5,
-    "pbmo_bytes": 200,
+    "pbmo_bytes": 176,
     "native_bytes": 144,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "List_PBToModel",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 4,
     "native_allocs": 5,
-    "pbmo_bytes": 200,
+    "pbmo_bytes": 176,
     "native_bytes": 144,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Mapped_ModelToPB",
@@ -313,11 +313,11 @@
   },
   {
     "scenario": "Member_ModelToPB",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 2,
     "native_allocs": 4,
-    "pbmo_bytes": 320,
+    "pbmo_bytes": 304,
     "native_bytes": 320,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Member_PBToModel",
@@ -361,35 +361,35 @@
   },
   {
     "scenario": "NewBidiConverter_Internal",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 3,
     "native_allocs": 0,
-    "pbmo_bytes": 352,
+    "pbmo_bytes": 256,
     "native_bytes": 0,
     "winner": "Native"
   },
   {
     "scenario": "NewBidiConverter_WithOptions_Internal",
-    "pbmo_allocs": 6,
+    "pbmo_allocs": 5,
     "native_allocs": 2,
-    "pbmo_bytes": 640,
+    "pbmo_bytes": 592,
     "native_bytes": 336,
     "winner": "Native"
   },
   {
     "scenario": "Organization_ModelToPB",
-    "pbmo_allocs": 6,
+    "pbmo_allocs": 2,
     "native_allocs": 6,
     "pbmo_bytes": 512,
     "native_bytes": 512,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Organization_PBToModel",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
     "pbmo_bytes": 304,
     "native_bytes": 304,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Outer_ModelToPB",
@@ -417,11 +417,11 @@
   },
   {
     "scenario": "Product_ModelToPB",
-    "pbmo_allocs": 10,
+    "pbmo_allocs": 7,
     "native_allocs": 9,
-    "pbmo_bytes": 584,
+    "pbmo_bytes": 552,
     "native_bytes": 560,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Product_PBToModel",
@@ -433,17 +433,17 @@
   },
   {
     "scenario": "Registry_Lookup_Internal",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 0,
     "native_allocs": 0,
-    "pbmo_bytes": 56,
+    "pbmo_bytes": 0,
     "native_bytes": 0,
     "winner": "Native"
   },
   {
     "scenario": "Registry_Register_Internal",
-    "pbmo_allocs": 8,
+    "pbmo_allocs": 2,
     "native_allocs": 0,
-    "pbmo_bytes": 176,
+    "pbmo_bytes": 80,
     "native_bytes": 0,
     "winner": "Native"
   },
@@ -465,11 +465,11 @@
   },
   {
     "scenario": "ScoreBoard_ModelToPB",
-    "pbmo_allocs": 6,
+    "pbmo_allocs": 4,
     "native_allocs": 5,
-    "pbmo_bytes": 168,
+    "pbmo_bytes": 176,
     "native_bytes": 144,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "ScoreBoard_PBToModel",
@@ -481,19 +481,19 @@
   },
   {
     "scenario": "ServiceConfig_ModelToPB",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 2,
     "native_allocs": 4,
     "pbmo_bytes": 272,
     "native_bytes": 272,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "ServiceConfig_PBToModel",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
     "pbmo_bytes": 136,
     "native_bytes": 136,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Simple_Batch1000_PBToModel",
@@ -561,19 +561,19 @@
   },
   {
     "scenario": "Simple_WithTransformer_PBToModel_Internal",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 5,
     "native_allocs": 3,
-    "pbmo_bytes": 96,
+    "pbmo_bytes": 112,
     "native_bytes": 80,
     "winner": "Native"
   },
   {
     "scenario": "Store_ModelToPB",
-    "pbmo_allocs": 4,
+    "pbmo_allocs": 2,
     "native_allocs": 4,
-    "pbmo_bytes": 368,
+    "pbmo_bytes": 352,
     "native_bytes": 368,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Store_PBToModel",
@@ -587,41 +587,41 @@
     "scenario": "TimePtr_ModelToPB",
     "pbmo_allocs": 2,
     "native_allocs": 2,
-    "pbmo_bytes": 96,
+    "pbmo_bytes": 144,
     "native_bytes": 96,
     "winner": "Native"
   },
   {
     "scenario": "TimePtr_PBToModel",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
     "pbmo_bytes": 80,
     "native_bytes": 80,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "TimeZeroValidValue_ModelToPB_Internal",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
-    "pbmo_bytes": 160,
+    "pbmo_bytes": 144,
     "native_bytes": 160,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "TimeZeroZeroValue_ModelToPB_Internal",
-    "pbmo_allocs": 1,
+    "pbmo_allocs": 2,
     "native_allocs": 1,
-    "pbmo_bytes": 32,
+    "pbmo_bytes": 144,
     "native_bytes": 32,
     "winner": "Native"
   },
   {
     "scenario": "TimeZero_ModelToPB",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
-    "pbmo_bytes": 160,
+    "pbmo_bytes": 144,
     "native_bytes": 160,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "TimeZero_PBToModel",
@@ -649,11 +649,11 @@
   },
   {
     "scenario": "UserProfile_ModelToPB",
-    "pbmo_allocs": 3,
+    "pbmo_allocs": 2,
     "native_allocs": 3,
-    "pbmo_bytes": 448,
+    "pbmo_bytes": 432,
     "native_bytes": 448,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "UserProfile_PBToModel",
@@ -689,34 +689,34 @@
   },
   {
     "scenario": "WrapperField_AllTypes_ModelToPB_Internal",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 2,
     "native_allocs": 5,
     "pbmo_bytes": 256,
     "native_bytes": 256,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Wrapper_ModelToPB",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 2,
     "native_allocs": 5,
     "pbmo_bytes": 256,
     "native_bytes": 256,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Wrapper_PBToModel",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 2,
     "native_allocs": 5,
     "pbmo_bytes": 80,
     "native_bytes": 80,
-    "winner": "Native"
+    "winner": "PBMO"
   },
   {
     "scenario": "Wrapper_PBToModel_Parallel",
-    "pbmo_allocs": 5,
+    "pbmo_allocs": 2,
     "native_allocs": 5,
     "pbmo_bytes": 80,
     "native_bytes": 80,
-    "winner": "Native"
+    "winner": "PBMO"
   }
 ]
