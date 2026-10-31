@@ -1,30 +1,1128 @@
 {
   "pbmo": [
     {
-      "name": "Medium_PBToModel",
-      "ns_per_op": 2500,
+      "name": "Account_ModelToPB",
+      "ns_per_op": 142.66666666666666,
+      "bytes_per_op": 176,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Account_PBToModel",
+      "ns_per_op": 74.94333333333333,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "AutoEnumConverter_Convert_Internal",
+      "ns_per_op": 8.869666666666667,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "ClassifyError_Internal",
+      "ns_per_op": 103.83333333333333,
+      "bytes_per_op": 24,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Comprehensive_ModelToPB",
+      "ns_per_op": 381.36666666666673,
+      "bytes_per_op": 392,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Comprehensive_PBToModel",
+      "ns_per_op": 321.3333333333333,
+      "bytes_per_op": 264,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Config_ModelToPB",
+      "ns_per_op": 69.46,
+      "bytes_per_op": 24,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Config_PBToModel",
+      "ns_per_op": 86.81,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "DeepNested4_Batch100_PBToModel",
+      "ns_per_op": 24421,
+      "bytes_per_op": 23424,
+      "allocs_per_op": 302
+    },
+    {
+      "name": "DeepNested4_ModelToPB",
+      "ns_per_op": 277.06666666666666,
+      "bytes_per_op": 272,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "DeepNested4_ModelToPB_Parallel",
+      "ns_per_op": 198.66666666666666,
+      "bytes_per_op": 272,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "DeepNested4_PBToModel",
+      "ns_per_op": 259.2666666666667,
+      "bytes_per_op": 224,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "DeepNested4_PBToModel_Parallel",
+      "ns_per_op": 175.79999999999998,
+      "bytes_per_op": 224,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "DesensitizeOff_PBToModel_Internal",
+      "ns_per_op": 88.10666666666667,
       "bytes_per_op": 128,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "DesensitizeOn_PBToModel_Internal",
+      "ns_per_op": 959.9333333333334,
+      "bytes_per_op": 312,
+      "allocs_per_op": 8
+    },
+    {
+      "name": "Enterprise_ModelToPB",
+      "ns_per_op": 328.6333333333334,
+      "bytes_per_op": 464,
       "allocs_per_op": 3
     },
     {
-      "name": "Simple_PBToModel",
-      "ns_per_op": 1063,
+      "name": "Enterprise_PBToModel",
+      "ns_per_op": 307.1,
+      "bytes_per_op": 368,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Enterprise_PBToModel_Parallel",
+      "ns_per_op": 227.83333333333334,
+      "bytes_per_op": 368,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "EnumMapper_Map_Internal",
+      "ns_per_op": 9.038,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Full_ModelToPB",
+      "ns_per_op": 236.6,
+      "bytes_per_op": 416,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Full_PBToModel",
+      "ns_per_op": 181.86666666666667,
+      "bytes_per_op": 184,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Full_PBToModel_Parallel",
+      "ns_per_op": 128.9,
+      "bytes_per_op": 184,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "GenericEnumMapper_Map_Internal",
+      "ns_per_op": 8.859333333333334,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Huge100_ModelToPB",
+      "ns_per_op": 716.1333333333333,
+      "bytes_per_op": 1728,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Huge100_PBToModel",
+      "ns_per_op": 655.7333333333335,
+      "bytes_per_op": 1344,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Huge30_ModelToPB",
+      "ns_per_op": 267.4666666666667,
+      "bytes_per_op": 528,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Huge30_PBToModel",
+      "ns_per_op": 190.29999999999998,
+      "bytes_per_op": 448,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Huge50_ModelToPB",
+      "ns_per_op": 417.3,
+      "bytes_per_op": 976,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Huge50_PBToModel",
+      "ns_per_op": 342.0333333333333,
+      "bytes_per_op": 770,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Large_Batch100_PBToModel",
+      "ns_per_op": 16886.666666666668,
+      "bytes_per_op": 28960,
+      "allocs_per_op": 102
+    },
+    {
+      "name": "Large_ModelToPB",
+      "ns_per_op": 232.76666666666665,
+      "bytes_per_op": 432,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Large_PBToModel",
+      "ns_per_op": 208.86666666666667,
+      "bytes_per_op": 296,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Large_PBToModel_Parallel",
+      "ns_per_op": 166.83333333333331,
+      "bytes_per_op": 296,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "List_ModelToPB",
+      "ns_per_op": 205.36666666666667,
+      "bytes_per_op": 176,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "List_PBToModel",
+      "ns_per_op": 206.63333333333335,
+      "bytes_per_op": 176,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Mapped_ModelToPB",
+      "ns_per_op": 48.373333333333335,
       "bytes_per_op": 48,
       "allocs_per_op": 1
+    },
+    {
+      "name": "Mapped_PBToModel",
+      "ns_per_op": 47.54999999999999,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Mapped_WithFieldMapping_ModelToPB_Internal",
+      "ns_per_op": 64.84666666666668,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Mapped_WithFieldMapping_PBToModel_Internal",
+      "ns_per_op": 65.04,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Medium_ModelToPB",
+      "ns_per_op": 71.98333333333333,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Medium_PBToModel",
+      "ns_per_op": 72.82333333333334,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Medium_PBToModel_Parallel",
+      "ns_per_op": 55.56333333333333,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Member_ModelToPB",
+      "ns_per_op": 205.4333333333333,
+      "bytes_per_op": 304,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Member_PBToModel",
+      "ns_per_op": 167.83333333333334,
+      "bytes_per_op": 184,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Metadata_ModelToPB",
+      "ns_per_op": 40.806666666666665,
+      "bytes_per_op": 24,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Metadata_PBToModel",
+      "ns_per_op": 40.81666666666666,
+      "bytes_per_op": 24,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "NamedSlice_ModelToPB",
+      "ns_per_op": 57.26333333333333,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "NamedSlice_PBToModel",
+      "ns_per_op": 56.370000000000005,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "NewBidiConverter_Internal",
+      "ns_per_op": 159.43333333333334,
+      "bytes_per_op": 256,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "NewBidiConverter_WithOptions_Internal",
+      "ns_per_op": 346.7666666666667,
+      "bytes_per_op": 592,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "NewError_Internal",
+      "ns_per_op": 161.06666666666666,
+      "bytes_per_op": 72,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "NewError_NoArgs_Internal",
+      "ns_per_op": 46.67333333333334,
+      "bytes_per_op": 32,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Organization_ModelToPB",
+      "ns_per_op": 252.6,
+      "bytes_per_op": 512,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Organization_PBToModel",
+      "ns_per_op": 209.1,
+      "bytes_per_op": 304,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Outer_ModelToPB",
+      "ns_per_op": 161.83333333333334,
+      "bytes_per_op": 72,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Outer_PBToModel",
+      "ns_per_op": 157.2,
+      "bytes_per_op": 72,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Outer_PBToModel_Parallel",
+      "ns_per_op": 89.98,
+      "bytes_per_op": 72,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Product_ModelToPB",
+      "ns_per_op": 499.4333333333334,
+      "bytes_per_op": 552,
+      "allocs_per_op": 7
+    },
+    {
+      "name": "Product_PBToModel",
+      "ns_per_op": 299.56666666666666,
+      "bytes_per_op": 329,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Registry_Lookup_Internal",
+      "ns_per_op": 51.836666666666666,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Registry_Register_Internal",
+      "ns_per_op": 223,
+      "bytes_per_op": 80,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "SafeBatchConvert100_ModelToPB_Internal",
+      "ns_per_op": 5572,
+      "bytes_per_op": 10672,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "SafeBatchConvert100_PBToModel_Internal",
+      "ns_per_op": 5475,
+      "bytes_per_op": 10672,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "SafeConverter_SafeConvertPBToModel_Internal",
+      "ns_per_op": 72.16,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "ScoreBoard_ModelToPB",
+      "ns_per_op": 205.9,
+      "bytes_per_op": 176,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "ScoreBoard_PBToModel",
+      "ns_per_op": 190.76666666666668,
+      "bytes_per_op": 152,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "ServiceConfig_ModelToPB",
+      "ns_per_op": 189.9,
+      "bytes_per_op": 272,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "ServiceConfig_PBToModel",
+      "ns_per_op": 144.46666666666667,
+      "bytes_per_op": 136,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Simple_Batch1000_PBToModel",
+      "ns_per_op": 30309.333333333332,
+      "bytes_per_op": 57344,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Simple_Batch100_PBToModel",
+      "ns_per_op": 2830,
+      "bytes_per_op": 5760,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Simple_BatchConvert100_ModelToPB_Internal",
+      "ns_per_op": 2804.6666666666665,
+      "bytes_per_op": 5760,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Simple_BatchConvert100_PBToModel_Internal",
+      "ns_per_op": 2825.3333333333335,
+      "bytes_per_op": 5760,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Simple_ModelToPB",
+      "ns_per_op": 53.81333333333333,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_PBToModel",
+      "ns_per_op": 49.69,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_PBToModel_Parallel",
+      "ns_per_op": 33.940000000000005,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_PBToModel_Parallel_Internal",
+      "ns_per_op": 33.870000000000005,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_WithTransformer_PBToModel_Internal",
+      "ns_per_op": 276.1333333333333,
+      "bytes_per_op": 112,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Store_ModelToPB",
+      "ns_per_op": 216.4666666666667,
+      "bytes_per_op": 352,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Store_PBToModel",
+      "ns_per_op": 206.76666666666665,
+      "bytes_per_op": 288,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimePtr_ModelToPB",
+      "ns_per_op": 126.63333333333333,
+      "bytes_per_op": 144,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimePtr_PBToModel",
+      "ns_per_op": 112.06666666666666,
+      "bytes_per_op": 80,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimeZeroValidValue_ModelToPB_Internal",
+      "ns_per_op": 124.80000000000001,
+      "bytes_per_op": 144,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimeZeroZeroValue_ModelToPB_Internal",
+      "ns_per_op": 120.39999999999999,
+      "bytes_per_op": 144,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimeZero_ModelToPB",
+      "ns_per_op": 129.29999999999998,
+      "bytes_per_op": 144,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimeZero_PBToModel",
+      "ns_per_op": 62.220000000000006,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "TransformerRegistry_Apply_Internal",
+      "ns_per_op": 157.63333333333333,
+      "bytes_per_op": 48,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "TransformerRegistry_Count_Internal",
+      "ns_per_op": 0.6268333333333334,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "UserProfile_ModelToPB",
+      "ns_per_op": 220.5,
+      "bytes_per_op": 432,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "UserProfile_PBToModel",
+      "ns_per_op": 160.93333333333334,
+      "bytes_per_op": 384,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "UserProfile_PBToModel_Parallel",
+      "ns_per_op": 178.86666666666665,
+      "bytes_per_op": 384,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "UserWithAddress_ModelToPB",
+      "ns_per_op": 132.1,
+      "bytes_per_op": 128,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "UserWithAddress_PBToModel",
+      "ns_per_op": 132.53333333333333,
+      "bytes_per_op": 128,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "WrapperField_AllTypes_ModelToPB_Internal",
+      "ns_per_op": 178.66666666666666,
+      "bytes_per_op": 256,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Wrapper_ModelToPB",
+      "ns_per_op": 179,
+      "bytes_per_op": 256,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Wrapper_PBToModel",
+      "ns_per_op": 116.8,
+      "bytes_per_op": 80,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Wrapper_PBToModel_Parallel",
+      "ns_per_op": 74.00666666666667,
+      "bytes_per_op": 80,
+      "allocs_per_op": 2
     }
   ],
   "native": [
     {
-      "name": "Medium_PBToModel",
-      "ns_per_op": 120,
-      "bytes_per_op": 128,
+      "name": "Account_ModelToPB",
+      "ns_per_op": 130.3,
+      "bytes_per_op": 192,
       "allocs_per_op": 3
     },
     {
-      "name": "Simple_PBToModel",
-      "ns_per_op": 45,
+      "name": "Account_PBToModel",
+      "ns_per_op": 68.01666666666667,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "AutoEnumConverter_Convert_Internal",
+      "ns_per_op": 9.127333333333333,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Comprehensive_ModelToPB",
+      "ns_per_op": 552.4,
+      "bytes_per_op": 752,
+      "allocs_per_op": 11
+    },
+    {
+      "name": "Comprehensive_PBToModel",
+      "ns_per_op": 162.83333333333334,
+      "bytes_per_op": 240,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Config_ModelToPB",
+      "ns_per_op": 328.3333333333333,
+      "bytes_per_op": 408,
+      "allocs_per_op": 6
+    },
+    {
+      "name": "Config_PBToModel",
+      "ns_per_op": 74.43666666666667,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "DeepNested4_Batch100_PBToModel",
+      "ns_per_op": 17816,
+      "bytes_per_op": 23296,
+      "allocs_per_op": 401
+    },
+    {
+      "name": "DeepNested4_ModelToPB",
+      "ns_per_op": 207.83333333333334,
+      "bytes_per_op": 272,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "DeepNested4_ModelToPB_Parallel",
+      "ns_per_op": 167.53333333333333,
+      "bytes_per_op": 272,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "DeepNested4_PBToModel",
+      "ns_per_op": 181.79999999999998,
+      "bytes_per_op": 224,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "DeepNested4_PBToModel_Parallel",
+      "ns_per_op": 140.29999999999998,
+      "bytes_per_op": 224,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Enterprise_ModelToPB",
+      "ns_per_op": 316.7333333333333,
+      "bytes_per_op": 464,
+      "allocs_per_op": 6
+    },
+    {
+      "name": "Enterprise_PBToModel",
+      "ns_per_op": 275.2,
+      "bytes_per_op": 368,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Enterprise_PBToModel_Parallel",
+      "ns_per_op": 201.26666666666665,
+      "bytes_per_op": 368,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "EnumMapper_Map_Internal",
+      "ns_per_op": 9.464,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Full_ModelToPB",
+      "ns_per_op": 276.3666666666667,
+      "bytes_per_op": 416,
+      "allocs_per_op": 6
+    },
+    {
+      "name": "Full_PBToModel",
+      "ns_per_op": 138.96666666666667,
+      "bytes_per_op": 184,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Full_PBToModel_Parallel",
+      "ns_per_op": 110.46666666666665,
+      "bytes_per_op": 184,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "GenericEnumMapper_Map_Internal",
+      "ns_per_op": 9.186,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Huge100_ModelToPB",
+      "ns_per_op": 779.6333333333333,
+      "bytes_per_op": 1536,
+      "allocs_per_op": 10
+    },
+    {
+      "name": "Huge100_PBToModel",
+      "ns_per_op": 631.4666666666667,
+      "bytes_per_op": 1328,
+      "allocs_per_op": 7
+    },
+    {
+      "name": "Huge30_ModelToPB",
+      "ns_per_op": 288.6666666666667,
+      "bytes_per_op": 544,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Huge30_PBToModel",
+      "ns_per_op": 194.20000000000002,
+      "bytes_per_op": 448,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Huge50_ModelToPB",
+      "ns_per_op": 485.73333333333335,
+      "bytes_per_op": 992,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Huge50_PBToModel",
+      "ns_per_op": 349.3,
+      "bytes_per_op": 770,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Large_Batch100_PBToModel",
+      "ns_per_op": 16045,
+      "bytes_per_op": 30496,
+      "allocs_per_op": 301
+    },
+    {
+      "name": "Large_ModelToPB",
+      "ns_per_op": 257.3666666666667,
+      "bytes_per_op": 448,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Large_PBToModel",
+      "ns_per_op": 155.46666666666667,
+      "bytes_per_op": 296,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Large_PBToModel_Parallel",
+      "ns_per_op": 152.23333333333335,
+      "bytes_per_op": 296,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "List_ModelToPB",
+      "ns_per_op": 168.93333333333334,
+      "bytes_per_op": 144,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "List_PBToModel",
+      "ns_per_op": 166.53333333333333,
+      "bytes_per_op": 144,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Mapped_ModelToPB",
+      "ns_per_op": 39.65,
       "bytes_per_op": 48,
       "allocs_per_op": 1
+    },
+    {
+      "name": "Mapped_PBToModel",
+      "ns_per_op": 39.75666666666667,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Mapped_WithFieldMapping_ModelToPB_Internal",
+      "ns_per_op": 39.38333333333333,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Mapped_WithFieldMapping_PBToModel_Internal",
+      "ns_per_op": 39.57666666666666,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Medium_ModelToPB",
+      "ns_per_op": 57.196666666666665,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Medium_PBToModel",
+      "ns_per_op": 58.65,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Medium_PBToModel_Parallel",
+      "ns_per_op": 48.97333333333333,
+      "bytes_per_op": 96,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Member_ModelToPB",
+      "ns_per_op": 216.16666666666666,
+      "bytes_per_op": 320,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Member_PBToModel",
+      "ns_per_op": 109,
+      "bytes_per_op": 184,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Metadata_ModelToPB",
+      "ns_per_op": 30.636666666666667,
+      "bytes_per_op": 24,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Metadata_PBToModel",
+      "ns_per_op": 30.526666666666667,
+      "bytes_per_op": 24,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "NamedSlice_ModelToPB",
+      "ns_per_op": 49.06666666666666,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "NamedSlice_PBToModel",
+      "ns_per_op": 48.21,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "NewBidiConverter_Internal",
+      "ns_per_op": 2.183333333333333,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "NewBidiConverter_WithOptions_Internal",
+      "ns_per_op": 169.1,
+      "bytes_per_op": 336,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Organization_ModelToPB",
+      "ns_per_op": 299.8333333333333,
+      "bytes_per_op": 512,
+      "allocs_per_op": 6
+    },
+    {
+      "name": "Organization_PBToModel",
+      "ns_per_op": 174.16666666666666,
+      "bytes_per_op": 304,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Outer_ModelToPB",
+      "ns_per_op": 102.15999999999998,
+      "bytes_per_op": 72,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Outer_PBToModel",
+      "ns_per_op": 94.05666666666666,
+      "bytes_per_op": 72,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Outer_PBToModel_Parallel",
+      "ns_per_op": 59.47333333333333,
+      "bytes_per_op": 72,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Product_ModelToPB",
+      "ns_per_op": 414,
+      "bytes_per_op": 560,
+      "allocs_per_op": 9
+    },
+    {
+      "name": "Product_PBToModel",
+      "ns_per_op": 197.76666666666665,
+      "bytes_per_op": 305,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Registry_Lookup_Internal",
+      "ns_per_op": 25.320000000000004,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "Registry_Register_Internal",
+      "ns_per_op": 70.06,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "SafeBatchConvert100_PBToModel_Internal",
+      "ns_per_op": 4545.666666666667,
+      "bytes_per_op": 5696,
+      "allocs_per_op": 101
+    },
+    {
+      "name": "SafeConverter_SafeConvertPBToModel_Internal",
+      "ns_per_op": 39.663333333333334,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "ScoreBoard_ModelToPB",
+      "ns_per_op": 169.5,
+      "bytes_per_op": 144,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "ScoreBoard_PBToModel",
+      "ns_per_op": 99.08666666666666,
+      "bytes_per_op": 128,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "ServiceConfig_ModelToPB",
+      "ns_per_op": 190.1,
+      "bytes_per_op": 272,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "ServiceConfig_PBToModel",
+      "ns_per_op": 97.28333333333335,
+      "bytes_per_op": 136,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Simple_Batch1000_PBToModel",
+      "ns_per_op": 49964.333333333336,
+      "bytes_per_op": 56192,
+      "allocs_per_op": 1001
+    },
+    {
+      "name": "Simple_Batch100_PBToModel",
+      "ns_per_op": 4616,
+      "bytes_per_op": 5696,
+      "allocs_per_op": 101
+    },
+    {
+      "name": "Simple_BatchConvert100_ModelToPB_Internal",
+      "ns_per_op": 2433.6666666666665,
+      "bytes_per_op": 4864,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_BatchConvert100_PBToModel_Internal",
+      "ns_per_op": 2425.6666666666665,
+      "bytes_per_op": 4864,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_ModelToPB",
+      "ns_per_op": 43.68333333333334,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_PBToModel",
+      "ns_per_op": 40.31333333333333,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_PBToModel_Parallel",
+      "ns_per_op": 30.13,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_PBToModel_Parallel_Internal",
+      "ns_per_op": 29.97333333333333,
+      "bytes_per_op": 48,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "Simple_WithTransformer_PBToModel_Internal",
+      "ns_per_op": 144.33333333333334,
+      "bytes_per_op": 80,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "Store_ModelToPB",
+      "ns_per_op": 232.33333333333334,
+      "bytes_per_op": 368,
+      "allocs_per_op": 4
+    },
+    {
+      "name": "Store_PBToModel",
+      "ns_per_op": 168.33333333333334,
+      "bytes_per_op": 288,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimePtr_ModelToPB",
+      "ns_per_op": 76.11,
+      "bytes_per_op": 96,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "TimePtr_PBToModel",
+      "ns_per_op": 99.63333333333333,
+      "bytes_per_op": 80,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "TimeZeroValidValue_ModelToPB_Internal",
+      "ns_per_op": 117.33333333333333,
+      "bytes_per_op": 160,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "TimeZeroZeroValue_ModelToPB_Internal",
+      "ns_per_op": 35.70666666666667,
+      "bytes_per_op": 32,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "TimeZero_ModelToPB",
+      "ns_per_op": 118.5,
+      "bytes_per_op": 160,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "TimeZero_PBToModel",
+      "ns_per_op": 49,
+      "bytes_per_op": 64,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "TransformerRegistry_Apply_Internal",
+      "ns_per_op": 136.66666666666666,
+      "bytes_per_op": 48,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "TransformerRegistry_Count_Internal",
+      "ns_per_op": 0.3144,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "UserProfile_ModelToPB",
+      "ns_per_op": 221.73333333333332,
+      "bytes_per_op": 448,
+      "allocs_per_op": 3
+    },
+    {
+      "name": "UserProfile_PBToModel",
+      "ns_per_op": 157.8,
+      "bytes_per_op": 384,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "UserProfile_PBToModel_Parallel",
+      "ns_per_op": 180.13333333333333,
+      "bytes_per_op": 384,
+      "allocs_per_op": 1
+    },
+    {
+      "name": "UserWithAddress_ModelToPB",
+      "ns_per_op": 98.14999999999999,
+      "bytes_per_op": 128,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "UserWithAddress_PBToModel",
+      "ns_per_op": 98.46999999999998,
+      "bytes_per_op": 128,
+      "allocs_per_op": 2
+    },
+    {
+      "name": "Validator_Validate_Internal",
+      "ns_per_op": 0.9374333333333333,
+      "bytes_per_op": 0,
+      "allocs_per_op": 0
+    },
+    {
+      "name": "WrapperField_AllTypes_ModelToPB_Internal",
+      "ns_per_op": 204.86666666666667,
+      "bytes_per_op": 256,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Wrapper_ModelToPB",
+      "ns_per_op": 218.96666666666667,
+      "bytes_per_op": 256,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Wrapper_PBToModel",
+      "ns_per_op": 107.3,
+      "bytes_per_op": 80,
+      "allocs_per_op": 5
+    },
+    {
+      "name": "Wrapper_PBToModel_Parallel",
+      "ns_per_op": 68.46333333333332,
+      "bytes_per_op": 80,
+      "allocs_per_op": 5
     }
   ]
 }
