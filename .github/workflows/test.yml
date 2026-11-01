@@ -1,10 +1,15 @@
 name: Test
 
-# 实际流程全在 kamalyes/deploy-pipeline 的 go-library-test.yml 里，三十来个 Go 库共用一份
-# 改那一份就等于改所有库，不必在各仓库里逐个同步
+# 实际流程全在 kamalyes/deploy-pipeline 的 go-library-test.yml 里，所有 Go 库共用一份
+# 改那一份就等于改所有库
 #
-# [EN] The pipeline itself lives in go-library-test.yml in kamalyes/deploy-pipeline and is
-# shared by every go-* library, so one edit there reaches all of them
+# 这里**不配矩阵**：共用流水线从本仓库 go.mod 的 go 指令算出地板，上限取 Go 官方当前
+# 发布的最新两个小版本，于是 Go 发新版之后矩阵自己跟上
+# 低于地板的版本会被工具链切换静默顶上去，流水线的 Verify Toolchain Honesty 闸门会判红
+#
+# [EN] The pipeline lives in go-library-test.yml in kamalyes/deploy-pipeline, shared by every
+# Go library here. The matrix is not configured: its floor comes from this module's go
+# directive and its ceiling from the two most recent Go releases
 
 on:
   push:
@@ -22,13 +27,21 @@ jobs:
   test:
     uses: kamalyes/deploy-pipeline/.github/workflows/go-library-test.yml@master
     with:
-      # go.mod 的 go 指令是 1.25.0，所以矩阵最低只能到 1.25.x
-      # 低于它的版本会被 Go 的工具链切换静默顶上去，共用流水线的
-      # Verify Toolchain Honesty 闸门会当场判红
-      # [EN] go.mod declares go 1.25.0, so 1.25.x is the lowest version this matrix can
-      # honestly claim; anything below it is silently replaced by toolchain switching
-      go-versions: '["1.25.x", "1.26.x", "1.27.x"]'
-      platforms: '["ubuntu-latest"]'
+      # 本仓库的 go.mod 有一条指向兄弟目录的 replace：
+      #   replace github.com/kamalyes/go-pbmo => ../go-pbmo
+      # CI 只 checkout 本仓库，兄弟目录不存在，go mod download 会直接报
+      #   reading ../go-pbmo/go.mod: no such file or directory
+      # 所以先把上游克隆到那个位置。基准仓库要对着上游的工作树跑才有意义，
+      # 这条 replace 是故意的，不该为了让 CI 过而删掉它
+      # [EN] This module's go.mod replaces the upstream with a sibling directory, which CI does
+      # not have, so the upstream is cloned into place first. The replace is deliberate -- a
+      # benchmark harness is meant to measure the upstream working tree -- so it stays
+      setup-script: |
+        set -euo pipefail
+        if [ ! -d "../go-pbmo" ]; then
+          git clone --depth 1 "https://github.com/kamalyes/go-pbmo.git" "../go-pbmo"
+          echo "已克隆 go-pbmo 到 ../go-pbmo（$(git -C "../go-pbmo" rev-parse --short HEAD)）"
+        fi
     secrets:
       # 显式映射而非 secrets: inherit —— inherit 跨账号调用时拿不到值
       # [EN] Mapped explicitly rather than with secrets: inherit, which yields nothing across accounts
