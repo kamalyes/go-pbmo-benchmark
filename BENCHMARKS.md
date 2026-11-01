@@ -9,126 +9,74 @@
 | goos | linux |
 | goarch | amd64 |
 | pkg | github.com/kamalyes/go-pbmo-benchmark/benchmarks |
-| cpu | AMD EPYC 7763 64-Core Processor |
+| cpu | INTEL(R) XEON(R) PLATINUM 8573C |
 
 ## Latency Comparison (ns/op) — PBMO vs Native
 
 | Scenario | PBMO | Native | Ratio (PBMO/Native) | Winner |
 |----------|-----:|-------:|--------------------:|--------|
-| Account_ModelToPB | 138 | 134 | 1.03x | Native |
-| Account_PBToModel | 74 | 63 | 1.18x | Native |
-| AutoEnumConverter_Convert_Internal | 9 | 9 | 0.96x | PBMO |
-| Comprehensive_ModelToPB | 381 | 558 | 0.68x | PBMO |
-| Comprehensive_PBToModel | 335 | 163 | 2.05x | Native |
-| Config_ModelToPB | 70 | 331 | 0.21x | PBMO |
-| Config_PBToModel | 85 | 75 | 1.13x | Native |
-| DeepNested4_Batch100_PBToModel | 27606 | 17887 | 1.54x | Native |
-| DeepNested4_ModelToPB | 268 | 204 | 1.31x | Native |
-| DeepNested4_ModelToPB_Parallel | 198 | 171 | 1.16x | Native |
-| DeepNested4_PBToModel | 274 | 169 | 1.62x | Native |
-| DeepNested4_PBToModel_Parallel | 181 | 143 | 1.27x | Native |
-| Enterprise_ModelToPB | 321 | 315 | 1.02x | Native |
-| Enterprise_PBToModel | 301 | 245 | 1.23x | Native |
-| Enterprise_PBToModel_Parallel | 230 | 219 | 1.05x | Native |
-| EnumMapper_Map_Internal | 9 | 9 | 0.96x | PBMO |
-| Full_ModelToPB | 233 | 276 | 0.85x | PBMO |
-| Full_PBToModel | 195 | 138 | 1.42x | Native |
-| Full_PBToModel_Parallel | 127 | 108 | 1.17x | Native |
-| GenericEnumMapper_Map_Internal | 9 | 9 | 0.94x | PBMO |
-| Huge100_ModelToPB | 713 | 779 | 0.92x | PBMO |
-| Huge100_PBToModel | 645 | 648 | 1.00x | PBMO |
-| Huge30_ModelToPB | 264 | 270 | 0.98x | PBMO |
-| Huge30_PBToModel | 192 | 195 | 0.98x | PBMO |
-| Huge50_ModelToPB | 416 | 498 | 0.84x | PBMO |
-| Huge50_PBToModel | 339 | 354 | 0.96x | PBMO |
-| Large_Batch100_PBToModel | 15910 | 15865 | 1.00x | Native |
-| Large_ModelToPB | 235 | 255 | 0.92x | PBMO |
-| Large_PBToModel | 203 | 152 | 1.33x | Native |
-| Large_PBToModel_Parallel | 167 | 151 | 1.10x | Native |
-| List_ModelToPB | 202 | 161 | 1.26x | Native |
-| List_PBToModel | 206 | 160 | 1.29x | Native |
-| Mapped_ModelToPB | 52 | 41 | 1.28x | Native |
-| Mapped_PBToModel | 48 | 41 | 1.18x | Native |
-| Mapped_WithFieldMapping_ModelToPB_Internal | 65 | 39 | 1.66x | Native |
-| Mapped_WithFieldMapping_PBToModel_Internal | 64 | 39 | 1.65x | Native |
-| Medium_ModelToPB | 71 | 57 | 1.26x | Native |
-| Medium_PBToModel | 72 | 57 | 1.26x | Native |
-| Medium_PBToModel_Parallel | 54 | 51 | 1.06x | Native |
-| Member_ModelToPB | 201 | 202 | 0.99x | PBMO |
-| Member_PBToModel | 166 | 109 | 1.53x | Native |
-| Metadata_ModelToPB | 42 | 35 | 1.22x | Native |
-| Metadata_PBToModel | 40 | 32 | 1.26x | Native |
-| NamedSlice_ModelToPB | 57 | 48 | 1.18x | Native |
-| NamedSlice_PBToModel | 57 | 47 | 1.20x | Native |
-| NewBidiConverter_Internal | 160 | 2 | 73.05x | Native |
-| NewBidiConverter_WithOptions_Internal | 344 | 163 | 2.11x | Native |
-| Organization_ModelToPB | 252 | 302 | 0.83x | PBMO |
-| Organization_PBToModel | 195 | 160 | 1.22x | Native |
-| Outer_ModelToPB | 161 | 90 | 1.79x | Native |
-| Outer_PBToModel | 153 | 88 | 1.72x | Native |
-| Outer_PBToModel_Parallel | 91 | 59 | 1.53x | Native |
-| Product_ModelToPB | 488 | 402 | 1.21x | Native |
-| Product_PBToModel | 300 | 194 | 1.55x | Native |
-| Registry_Lookup_Internal | 50 | 25 | 1.99x | Native |
-| Registry_Register_Internal | 212 | 70 | 3.01x | Native |
-| SafeBatchConvert100_PBToModel_Internal | 5381 | 4349 | 1.24x | Native |
-| SafeConverter_SafeConvertPBToModel_Internal | 71 | 43 | 1.67x | Native |
-| ScoreBoard_ModelToPB | 206 | 170 | 1.21x | Native |
-| ScoreBoard_PBToModel | 182 | 99 | 1.85x | Native |
-| ServiceConfig_ModelToPB | 185 | 187 | 0.99x | PBMO |
-| ServiceConfig_PBToModel | 129 | 96 | 1.35x | Native |
-| Simple_Batch1000_PBToModel | 30487 | 47399 | 0.64x | PBMO |
-| Simple_Batch100_PBToModel | 2952 | 5013 | 0.59x | PBMO |
-| Simple_BatchConvert100_ModelToPB_Internal | 2833 | 2361 | 1.20x | Native |
-| Simple_BatchConvert100_PBToModel_Internal | 2883 | 2460 | 1.17x | Native |
-| Simple_ModelToPB | 49 | 40 | 1.24x | Native |
-| Simple_PBToModel | 50 | 40 | 1.24x | Native |
-| Simple_PBToModel_Parallel | 34 | 30 | 1.13x | Native |
-| Simple_PBToModel_Parallel_Internal | 33 | 30 | 1.12x | Native |
-| Simple_WithTransformer_PBToModel_Internal | 276 | 142 | 1.94x | Native |
-| Store_ModelToPB | 211 | 229 | 0.92x | PBMO |
-| Store_PBToModel | 207 | 178 | 1.16x | Native |
-| TimePtr_ModelToPB | 127 | 77 | 1.65x | Native |
-| TimePtr_PBToModel | 110 | 100 | 1.11x | Native |
-| TimeZeroValidValue_ModelToPB_Internal | 122 | 115 | 1.07x | Native |
-| TimeZeroZeroValue_ModelToPB_Internal | 118 | 32 | 3.69x | Native |
-| TimeZero_ModelToPB | 128 | 119 | 1.07x | Native |
-| TimeZero_PBToModel | 62 | 54 | 1.15x | Native |
-| TransformerRegistry_Apply_Internal | 161 | 134 | 1.21x | Native |
-| TransformerRegistry_Count_Internal | 0 | 1 | 0.50x | PBMO |
-| UserProfile_ModelToPB | 220 | 229 | 0.96x | PBMO |
-| UserProfile_PBToModel | 162 | 157 | 1.03x | Native |
-| UserProfile_PBToModel_Parallel | 181 | 176 | 1.03x | Native |
-| UserWithAddress_ModelToPB | 128 | 96 | 1.34x | Native |
-| UserWithAddress_PBToModel | 127 | 96 | 1.32x | Native |
-| WrapperField_AllTypes_ModelToPB_Internal | 188 | 192 | 0.98x | PBMO |
-| Wrapper_ModelToPB | 182 | 202 | 0.90x | PBMO |
-| Wrapper_PBToModel | 118 | 106 | 1.12x | Native |
-| Wrapper_PBToModel_Parallel | 72 | 67 | 1.07x | Native |
+| AutoEnumConverter_Convert_Internal | 7 | 7 | 0.98x | PBMO |
+| DeepNested4_Batch100_PBToModel | 22256 | 16828 | 1.32x | Native |
+| DeepNested4_ModelToPB | 253 | 192 | 1.32x | Native |
+| DeepNested4_ModelToPB_Parallel | 184 | 169 | 1.09x | Native |
+| DeepNested4_PBToModel | 240 | 160 | 1.50x | Native |
+| DeepNested4_PBToModel_Parallel | 162 | 140 | 1.16x | Native |
+| EnumMapper_Map_Internal | 6 | 7 | 0.89x | PBMO |
+| Full_ModelToPB | 234 | 261 | 0.90x | PBMO |
+| Full_PBToModel | 172 | 142 | 1.22x | Native |
+| GenericEnumMapper_Map_Internal | 6 | 7 | 0.93x | PBMO |
+| Huge100_ModelToPB | 792 | 807 | 0.98x | PBMO |
+| Huge100_PBToModel | 701 | 691 | 1.01x | Native |
+| Huge30_ModelToPB | 262 | 276 | 0.95x | PBMO |
+| Huge30_PBToModel | 205 | 215 | 0.95x | PBMO |
+| Huge50_ModelToPB | 466 | 521 | 0.89x | PBMO |
+| Huge50_PBToModel | 377 | 401 | 0.94x | PBMO |
+| Large_Batch100_PBToModel | 14723 | 16582 | 0.89x | PBMO |
+| Large_ModelToPB | 228 | 244 | 0.93x | PBMO |
+| Large_PBToModel | 211 | 172 | 1.23x | Native |
+| Large_PBToModel_Parallel | 170 | 158 | 1.08x | Native |
+| Mapped_WithFieldMapping_ModelToPB_Internal | 62 | 38 | 1.63x | Native |
+| Mapped_WithFieldMapping_PBToModel_Internal | 62 | 38 | 1.60x | Native |
+| Medium_ModelToPB | 66 | 55 | 1.20x | Native |
+| Medium_PBToModel | 68 | 55 | 1.23x | Native |
+| Member_ModelToPB | 201 | 203 | 0.99x | PBMO |
+| Member_PBToModel | 159 | 113 | 1.41x | Native |
+| NewBidiConverter_Internal | 162 | 2 | 95.59x | Native |
+| NewBidiConverter_WithOptions_Internal | 350 | 173 | 2.03x | Native |
+| Organization_ModelToPB | 257 | 297 | 0.87x | PBMO |
+| Organization_PBToModel | 196 | 165 | 1.19x | Native |
+| Registry_Lookup_Internal | 50 | 21 | 2.38x | Native |
+| Registry_Register_Internal | 208 | 55 | 3.78x | Native |
+| SafeBatchConvert100_PBToModel_Internal | 5460 | 4504 | 1.21x | Native |
+| SafeConverter_SafeConvertPBToModel_Internal | 67 | 39 | 1.73x | Native |
+| ServiceConfig_ModelToPB | 187 | 183 | 1.03x | Native |
+| ServiceConfig_PBToModel | 129 | 99 | 1.31x | Native |
+| Simple_BatchConvert100_ModelToPB_Internal | 2575 | 2507 | 1.03x | Native |
+| Simple_BatchConvert100_PBToModel_Internal | 2669 | 2447 | 1.09x | Native |
+| Simple_PBToModel_Parallel_Internal | 32 | 30 | 1.06x | Native |
+| Simple_WithTransformer_PBToModel_Internal | 256 | 136 | 1.88x | Native |
+| TimeZeroValidValue_ModelToPB_Internal | 123 | 115 | 1.07x | Native |
+| TimeZeroZeroValue_ModelToPB_Internal | 118 | 31 | 3.77x | Native |
+| TransformerRegistry_Apply_Internal | 151 | 128 | 1.18x | Native |
+| TransformerRegistry_Count_Internal | 1 | 1 | 1.22x | Native |
+| UserProfile_ModelToPB | 220 | 223 | 0.98x | PBMO |
+| UserProfile_PBToModel | 173 | 173 | 1.00x | Native |
+| UserProfile_PBToModel_Parallel | 181 | 185 | 0.98x | PBMO |
+| WrapperField_AllTypes_ModelToPB_Internal | 181 | 198 | 0.92x | PBMO |
 
 ## Memory Allocation — PBMO vs Native
 
 | Scenario | PBMO (allocs) | Native (allocs) | PBMO (bytes) | Native (bytes) | Winner |
 |----------|---------------:|----------------:|-------------:|---------------:|--------|
-| Account_ModelToPB | 2 | 3 | 176 | 192 | PBMO |
-| Account_PBToModel | 1 | 1 | 96 | 96 | Native |
 | AutoEnumConverter_Convert_Internal | 0 | 0 | 0 | 0 | Native |
-| Comprehensive_ModelToPB | 5 | 11 | 392 | 752 | PBMO |
-| Comprehensive_PBToModel | 4 | 4 | 264 | 240 | Native |
-| Config_ModelToPB | 1 | 6 | 24 | 408 | PBMO |
-| Config_PBToModel | 1 | 1 | 64 | 64 | Native |
 | DeepNested4_Batch100_PBToModel | 302 | 401 | 23424 | 23296 | PBMO |
 | DeepNested4_ModelToPB | 4 | 5 | 272 | 272 | PBMO |
 | DeepNested4_ModelToPB_Parallel | 4 | 5 | 272 | 272 | PBMO |
 | DeepNested4_PBToModel | 4 | 4 | 224 | 224 | Native |
 | DeepNested4_PBToModel_Parallel | 4 | 4 | 224 | 224 | Native |
-| Enterprise_ModelToPB | 3 | 6 | 464 | 464 | PBMO |
-| Enterprise_PBToModel | 3 | 4 | 368 | 368 | PBMO |
-| Enterprise_PBToModel_Parallel | 3 | 4 | 368 | 368 | PBMO |
 | EnumMapper_Map_Internal | 0 | 0 | 0 | 0 | Native |
 | Full_ModelToPB | 2 | 6 | 416 | 416 | PBMO |
 | Full_PBToModel | 2 | 4 | 184 | 184 | PBMO |
-| Full_PBToModel_Parallel | 2 | 4 | 184 | 184 | PBMO |
 | GenericEnumMapper_Map_Internal | 0 | 0 | 0 | 0 | Native |
 | Huge100_ModelToPB | 2 | 10 | 1728 | 1536 | PBMO |
 | Huge100_PBToModel | 2 | 7 | 1344 | 1328 | PBMO |
@@ -140,63 +88,31 @@
 | Large_ModelToPB | 2 | 5 | 432 | 448 | PBMO |
 | Large_PBToModel | 2 | 3 | 296 | 296 | PBMO |
 | Large_PBToModel_Parallel | 2 | 3 | 296 | 296 | PBMO |
-| List_ModelToPB | 4 | 5 | 176 | 144 | PBMO |
-| List_PBToModel | 4 | 5 | 176 | 144 | PBMO |
-| Mapped_ModelToPB | 1 | 1 | 48 | 48 | Native |
-| Mapped_PBToModel | 1 | 1 | 48 | 48 | Native |
 | Mapped_WithFieldMapping_ModelToPB_Internal | 1 | 1 | 48 | 48 | Native |
 | Mapped_WithFieldMapping_PBToModel_Internal | 1 | 1 | 48 | 48 | Native |
 | Medium_ModelToPB | 1 | 1 | 96 | 96 | Native |
 | Medium_PBToModel | 1 | 1 | 96 | 96 | Native |
-| Medium_PBToModel_Parallel | 1 | 1 | 96 | 96 | Native |
 | Member_ModelToPB | 2 | 4 | 304 | 320 | PBMO |
 | Member_PBToModel | 2 | 2 | 184 | 184 | Native |
-| Metadata_ModelToPB | 1 | 1 | 24 | 24 | Native |
-| Metadata_PBToModel | 1 | 1 | 24 | 24 | Native |
-| NamedSlice_ModelToPB | 1 | 1 | 64 | 64 | Native |
-| NamedSlice_PBToModel | 1 | 1 | 64 | 64 | Native |
 | NewBidiConverter_Internal | 3 | 0 | 256 | 0 | Native |
 | NewBidiConverter_WithOptions_Internal | 5 | 2 | 592 | 336 | Native |
 | Organization_ModelToPB | 2 | 6 | 512 | 512 | PBMO |
 | Organization_PBToModel | 2 | 3 | 304 | 304 | PBMO |
-| Outer_ModelToPB | 3 | 3 | 72 | 72 | Native |
-| Outer_PBToModel | 3 | 3 | 72 | 72 | Native |
-| Outer_PBToModel_Parallel | 3 | 3 | 72 | 72 | Native |
-| Product_ModelToPB | 7 | 9 | 552 | 560 | PBMO |
-| Product_PBToModel | 4 | 3 | 329 | 305 | Native |
 | Registry_Lookup_Internal | 0 | 0 | 0 | 0 | Native |
 | Registry_Register_Internal | 2 | 0 | 80 | 0 | Native |
 | SafeBatchConvert100_PBToModel_Internal | 4 | 101 | 10672 | 5696 | PBMO |
 | SafeConverter_SafeConvertPBToModel_Internal | 1 | 1 | 48 | 48 | Native |
-| ScoreBoard_ModelToPB | 4 | 5 | 176 | 144 | PBMO |
-| ScoreBoard_PBToModel | 3 | 2 | 152 | 128 | Native |
 | ServiceConfig_ModelToPB | 2 | 4 | 272 | 272 | PBMO |
 | ServiceConfig_PBToModel | 2 | 3 | 136 | 136 | PBMO |
-| Simple_Batch1000_PBToModel | 2 | 1001 | 57344 | 56192 | PBMO |
-| Simple_Batch100_PBToModel | 2 | 101 | 5760 | 5696 | PBMO |
 | Simple_BatchConvert100_ModelToPB_Internal | 2 | 1 | 5760 | 4864 | Native |
 | Simple_BatchConvert100_PBToModel_Internal | 2 | 1 | 5760 | 4864 | Native |
-| Simple_ModelToPB | 1 | 1 | 48 | 48 | Native |
-| Simple_PBToModel | 1 | 1 | 48 | 48 | Native |
-| Simple_PBToModel_Parallel | 1 | 1 | 48 | 48 | Native |
 | Simple_PBToModel_Parallel_Internal | 1 | 1 | 48 | 48 | Native |
 | Simple_WithTransformer_PBToModel_Internal | 5 | 3 | 112 | 80 | Native |
-| Store_ModelToPB | 2 | 4 | 352 | 368 | PBMO |
-| Store_PBToModel | 2 | 2 | 288 | 288 | Native |
-| TimePtr_ModelToPB | 2 | 2 | 144 | 96 | Native |
-| TimePtr_PBToModel | 2 | 3 | 80 | 80 | PBMO |
 | TimeZeroValidValue_ModelToPB_Internal | 2 | 3 | 144 | 160 | PBMO |
 | TimeZeroZeroValue_ModelToPB_Internal | 2 | 1 | 144 | 32 | Native |
-| TimeZero_ModelToPB | 2 | 3 | 144 | 160 | PBMO |
-| TimeZero_PBToModel | 1 | 1 | 64 | 64 | Native |
 | TransformerRegistry_Apply_Internal | 3 | 3 | 48 | 48 | Native |
 | TransformerRegistry_Count_Internal | 0 | 0 | 0 | 0 | Native |
 | UserProfile_ModelToPB | 2 | 3 | 432 | 448 | PBMO |
 | UserProfile_PBToModel | 1 | 1 | 384 | 384 | Native |
 | UserProfile_PBToModel_Parallel | 1 | 1 | 384 | 384 | Native |
-| UserWithAddress_ModelToPB | 2 | 2 | 128 | 128 | Native |
-| UserWithAddress_PBToModel | 2 | 2 | 128 | 128 | Native |
 | WrapperField_AllTypes_ModelToPB_Internal | 2 | 5 | 256 | 256 | PBMO |
-| Wrapper_ModelToPB | 2 | 5 | 256 | 256 | PBMO |
-| Wrapper_PBToModel | 2 | 5 | 80 | 80 | PBMO |
-| Wrapper_PBToModel_Parallel | 2 | 5 | 80 | 80 | PBMO |
